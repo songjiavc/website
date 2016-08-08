@@ -50,9 +50,14 @@ function countUsers()
         dataType: "json",
         success: function (returndata) {
         	
-        	var count = returndata.count;//当前用户是否可以选择通行证组的范围
+        	var count = 0;
+        	count = returndata.count;//当前用户是否可以选择通行证组的范围
         	
-        	$("#totalUsers").html(count);
+        	var countJS = 5000;
+        	
+        	
+        	
+        	$("#totalUsers").html(count+countJS);
         	
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
