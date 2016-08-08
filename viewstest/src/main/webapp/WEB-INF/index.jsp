@@ -62,15 +62,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.jsp"><img src="<%=request.getContextPath() %>/images/clogo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="http://www.cai810.com/"><img src="<%=request.getContextPath() %>/images/clogo.png" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<%=request.getContextPath() %>/proxy/visit.action">首页</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action"" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>                         
+                        <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>                         
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -770,10 +770,10 @@
                 </div>
                 <div class="col-sm-4">
                     <ul class="pull-right">
-                       <li><a href="<%=request.getContextPath() %>/proxy/visit.action">首页</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action"" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>   
+                       <li><a href="<%=request.getContextPath() %>">首页</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action"" >产品</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>   
                     </ul>
                 </div>
             </div>
