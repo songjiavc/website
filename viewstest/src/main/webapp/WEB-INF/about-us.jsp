@@ -27,13 +27,13 @@
 <body>
 
     <header id="header">
-        <div class="top-bar">
+        <!-- <div class="top-bar">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-4">
                         <div class="top-number"><p><i class="fa fa-phone-square"></i>400-169-1810</p></div>
                     </div>
-                   <!--  <div class="col-sm-6 col-xs-8">
+                    <div class="col-sm-6 col-xs-8">
                        <div class="social">
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -49,10 +49,10 @@
                                 </form>
                            </div>
                        </div>
-                    </div>-->
+                    </div>
                 </div>
-            </div><!--/.container-->
-        </div><!--/.top-bar-->
+            </div>/.container
+        </div> --><!--/.top-bar-->
 
         <nav class="navbar navbar-inverse" role="banner">
             <div class="container">

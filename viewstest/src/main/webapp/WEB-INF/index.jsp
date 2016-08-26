@@ -25,14 +25,14 @@
 
 <body class="homepage">
 
-    <header id="header">
-        <div class="top-bar">
+    <header id="header" style="z-index:auto;">
+        <!-- <div class="top-bar">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-4">
                         <div class="top-number"><p><i class="fa fa-phone-square"></i>400-169-1810</p></div>
                     </div>
-                  <!--  <div class="col-sm-6 col-xs-8">
+                   <div class="col-sm-6 col-xs-8">
                        <div class="social">
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -48,12 +48,12 @@
                                 </form>
                            </div>
                        </div>
-                    </div>-->
+                    </div>
                 </div>
-            </div><!--/.container-->
-        </div><!--/.top-bar-->
+            </div>/.container
+        </div> --><!--/.top-bar-->
 
-        <nav class="navbar navbar-inverse" role="banner">
+        <nav class="navbar navbar-inverse" role="banner" style="z-index:100;">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -68,6 +68,9 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
+                        <%-- <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>  --%>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>                         
@@ -78,7 +81,7 @@
 		
     </header><!--/header-->
 
-    <section id="main-slider" class="no-margin">
+    <section id="main-slider" class="no-margin" style=" margin-top:-90px;">
         <div class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators" >
                 <li data-target="#main-slider" data-slide-to="0" class="active"></li>
@@ -88,22 +91,17 @@
             </ol>
             <div class="carousel-inner">
 
-                <div class="item active" style="background-image: url(<%=request.getContextPath() %>/images/slide-3.jpg)">
+                <div class="item active" style="background-image: url(<%=request.getContextPath() %>/images/banner1.png)">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
-                                <div class="carousel-content">
+                               <!--  <div class="carousel-content">
                                     <h1 class="animation animated-item-1">中国较早的电子走势图产品服务商</h1>
-                                    <!--<h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>-->
-                                </div>
+                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                </div> -->
                             </div>
 
-                           <!-- <div class="col-sm-6 hidden-xs animation animated-item-4">
-                                <div class="slider-img">
-                                    <img src="<%=request.getContextPath() %>/images/slide-3.jpg" class="img-responsive">
-                                </div>
-                            </div>-->
 
                         </div>
                     </div>
@@ -781,15 +779,16 @@
     </footer><!--/#footer-->
     
      <script src="<%=request.getContextPath() %>/js/jquery.js"></script>
-	<script type="text/javascript">
-	//幻灯片自动轮播
-        $('.carousel').carousel();
-    </script>
+	
    
     <script src="<%=request.getContextPath() %>/js/bootstrap.min.js"></script>
     <script src="<%=request.getContextPath() %>/js/jquery.prettyPhoto.js"></script><!--jquery图片播放浏览插件prettyPhoto-->
     <script src="<%=request.getContextPath() %>/js/jquery.isotope.min.js"></script><!-- isotope自动布局插件-->
     <script src="<%=request.getContextPath() %>/js/main.js"></script>
     <script src="<%=request.getContextPath() %>/js/wow.min.js"></script><!--实现了在网页滚动时的动画效果，有漂亮的动画效果，依赖于Animate.css-->
+    <script type="text/javascript">
+	//幻灯片自动轮播
+        $('.carousel').carousel();
+    </script>
 </body>
 </html>
