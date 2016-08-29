@@ -22,6 +22,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-57-precomposed.png">
+    
+    <style type="text/css">
+    	/*设置滚动的图片居中*/
+    	.carousel-inner img{
+    		    margin-left: auto;
+    			margin-right: auto;
+    	}
+    </style>
+    
 </head><!--/head-->
 
 <body>
@@ -100,7 +109,7 @@
 							<img src="<%=request.getContextPath() %>/images/u109.jpg" class="img-responsive" alt=""> 
 						</div><!--/.item-->
 					   <div class="item">
-							<img src="<%=request.getContextPath() %>/images/u19.png" class="img-responsive" alt=""> 
+							<img src="<%=request.getContextPath() %>/images/u19.jpg" class="img-responsive" alt=""> 
 					   </div> 
 					</div>
 					 <!-- 轮播（Carousel）导航 -->

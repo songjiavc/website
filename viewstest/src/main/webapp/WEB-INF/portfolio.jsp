@@ -101,7 +101,7 @@
                                 <div class="recent-work-inner">
                                     <h3><a href="#">快三走势图展示</a></h3>
                                     <p></p>
-                                    <a class="preview" href="<%=request.getContextPath() %>/images/u18.png" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
                                 </div> 
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                                 <div class="recent-work-inner">
                                     <h3><a href="#">12选5走势图展示</a></h3>
                                     <p></p>
-                                    <a class="preview" href="<%=request.getContextPath() %>/images/u4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>  查看</a>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i>  查看</a>
                                 </div> 
                             </div>
                         </div>        

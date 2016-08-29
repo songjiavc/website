@@ -651,6 +651,7 @@
 }
 .fa-bullhorn:before {
   content: "\f0a1";
+ /* content:url(../images/testimonials1.png); */
 }
 .fa-bell:before {
   content: "\f0f3";

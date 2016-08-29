@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
 <title>辽宁佰艺霖科技有限公司</title>
 <!-- core CSS -->
     <link href="<%=request.getContextPath() %>/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<%=request.getContextPath() %>/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<%=request.getContextPath() %>/css/font-awesome.css" rel="stylesheet"><!-- font-awesome.min -->
     <link href="<%=request.getContextPath() %>/css/animate.min.css" rel="stylesheet"><!--非常优秀的CSS3动画库，不依赖于jQuery，纯CSS动画-->
     <link href="<%=request.getContextPath() %>/css/prettyPhoto.css" rel="stylesheet">
     <link href="<%=request.getContextPath() %>/css/main.css" rel="stylesheet">
@@ -21,11 +23,30 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-57-precomposed.png">
+    
+    <!--[if IE]>
+	<style>
+	.navbar {
+	  border-radius: 0;
+	  margin-bottom: 0;
+	  
+	  /*其他浏览器header透明度设置*/
+	  background: rgba(0,0,0,0.5);
+	  /*IE浏览器header透明度设置*/
+	  background: transparent; 
+	  filter: progid:DXImageTransform.Microsoft.gradient(gradientType = 0, startColorstr = #50000000, endColorstr = #50000000)\9;
+	 
+	  padding: 15px 0;
+	  padding-bottom: 0;
+	}
+	</style>
+	<![endif]-->
+    
 </head><!--/head-->
 
 <body class="homepage">
 
-    <header id="header" style="z-index:auto;">
+    <header id="header" >
         <!-- <div class="top-bar">
             <div class="container">
                 <div class="row">
@@ -68,12 +89,14 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
-                        <%-- <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                        <!-- 本地测试的导航 -->
+                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>  --%>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li> 
+                        <!-- 部署到服务器的导航 -->
+                       <%--  <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>                         
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>    --%>                      
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -81,7 +104,7 @@
 		
     </header><!--/header-->
 
-    <section id="main-slider" class="no-margin" style=" margin-top:-90px;">
+    <section id="main-slider" class="no-margin" style=" top:-90px;">
         <div class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators" >
                 <li data-target="#main-slider" data-slide-to="0" class="active"></li>
@@ -91,7 +114,7 @@
             </ol>
             <div class="carousel-inner">
 
-                <div class="item active" style="background-image: url(<%=request.getContextPath() %>/images/banner1.png)">
+                <div class="item active" style="background-image: url(<%=request.getContextPath() %>/images/banner1.jpg)">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
@@ -107,15 +130,14 @@
                     </div>
                 </div><!--/.item-->
 
-                <div class="item" style="background-image: url(<%=request.getContextPath() %>/images/u14.png)">
+                <div class="item" style="background-image: url(<%=request.getContextPath() %>/images/banner2.jpg)">
                     <div class="container">
                         <div class="row slide-margin">
-                            <div class="col-sm-6">
-                               <!-- <div class="carousel-content">
-                                    <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
-                                </div>-->
+                             <div class="col-sm-6">
+                             	<%--添加内部文字链接方法： --%>
+                               <!--  <div class="carousel-content">
+                                    <h1 class="animation animated-item-1"><a href="http://www.baidu.com" target="_blank">百度</a></h1>
+                                </div> -->
                             </div>
 
                             
@@ -124,7 +146,7 @@
                     </div>
                 </div><!--/.item-->
 
-                <div class="item" style="background-image: url(<%=request.getContextPath() %>/images/u16.png)">
+                <div class="item" style="background-image: url(<%=request.getContextPath() %>/images/banner3.jpg)">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
@@ -172,7 +194,7 @@
         </a>
     </section><!--/#main-slider-->
 
-    <section id="feature" >
+    <section id="feature" style=" margin-top:-90px;">
         <div class="container">
            <div class="center wow fadeInDown">
                 <h2>我们的优势</h2>
@@ -233,121 +255,7 @@
         </div><!--/.container-->
     </section><!--/#feature-->
 
-	<!--
-    <section id="recent-works">
-        <div class="container">
-            <div class="center wow fadeInDown">
-                <h2>Recent Works</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item1.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme</a> </h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item2.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item2.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item3.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item3.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item4.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item4.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-                
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item5.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item6.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item7.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item8.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-            </div><!--/.row-->
-       <!-- </div><!--/.container-->
-    <!--</section><!--/#recent-works-->
+	
 
     <section id="services" class="service-item">
 	   <div class="container">
@@ -433,228 +341,7 @@
         </div><!--/.container-->
     </section><!--/#services-->
 
-	<!--
-    <section id="middle">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 wow fadeInDown">
-                    <div class="skill">
-                        <h2>Our Skills</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <div class="progress-wrap">
-                            <h3>Graphic Design</h3>
-                            <div class="progress">
-                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
-                                <span class="bar-width">85%</span>
-                              </div>
-
-                            </div>
-                        </div>
-
-                        <div class="progress-wrap">
-                            <h3>HTML</h3>
-                            <div class="progress">
-                              <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                               <span class="bar-width">95%</span>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-wrap">
-                            <h3>CSS</h3>
-                            <div class="progress">
-                              <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="bar-width">80%</span>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-wrap">
-                            <h3>Wordpress</h3>
-                            <div class="progress">
-                              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                <span class="bar-width">90%</span>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div><!--/.col-sm-6-->
-<!--
-                <div class="col-sm-6 wow fadeInDown">
-                    <div class="accordion">
-                        <h2>Why People like us?</h2>
-                        <div class="panel-group" id="accordion1">
-                          <div class="panel panel-default">
-                            <div class="panel-heading active">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
-                                  Lorem ipsum dolor sit amet
-                                  <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                              </h3>
-                            </div>
-
-                            <div id="collapseOne1" class="panel-collapse collapse in">
-                              <div class="panel-body">
-                                  <div class="media accordion-inner">
-                                        <div class="pull-left">
-                                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/accordion1.png">
-                                        </div>
-                                        <div class="media-body">
-                                             <h4>Adipisicing elit</h4>
-                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                                        </div>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
-                                  Lorem ipsum dolor sit amet
-                                  <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                              </h3>
-                            </div>
-                            <div id="collapseTwo1" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
-                                  Lorem ipsum dolor sit amet
-                                  <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                              </h3>
-                            </div>
-                            <div id="collapseThree1" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
-                                  Lorem ipsum dolor sit amet
-                                  <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                              </h3>
-                            </div>
-                            <div id="collapseFour1" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-                              </div>
-                            </div>
-                          </div>
-                        </div><!--/#accordion1-->
-                   <!-- </div>
-                </div>
-
-            </div><!--/.row-->
-       <!-- </div><!--/.container-->
-   <!-- </section><!--/#middle-->
-<!--
-    <section id="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 wow fadeInDown">
-                   <div class="tab-wrap"> 
-                        <div class="media">
-                            <div class="parrent pull-left">
-                                <ul class="nav nav-tabs nav-stacked">
-                                    <li class=""><a href="#tab1" data-toggle="tab" class="analistic-01">Responsive Web Design</a></li>
-                                    <li class="active"><a href="#tab2" data-toggle="tab" class="analistic-02">Premium Plugin Included</a></li>
-                                    <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Predefine Layout</a></li>
-                                    <li class=""><a href="#tab4" data-toggle="tab" class="tehnical">Our Philosopy</a></li>
-                                    <li class=""><a href="#tab5" data-toggle="tab" class="tehnical">What We Do?</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="parrent media-body">
-                                <div class="tab-content">
-                                    <div class="tab-pane fade" id="tab1">
-                                        <div class="media">
-                                           <div class="pull-left">
-                                                <img class="img-responsive" src="<%=request.getContextPath() %>/images/tab2.png">
-                                            </div>
-                                            <div class="media-body">
-                                                 <h2>Adipisicing elit</h2>
-                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                     <div class="tab-pane fade active in" id="tab2">
-                                        <div class="media">
-                                           <div class="pull-left">
-                                                <img class="img-responsive" src="<%=request.getContextPath() %>/images/tab1.png">
-                                            </div>
-                                            <div class="media-body">
-                                                 <h2>Adipisicing elit</h2>
-                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use.
-                                                 </p>
-                                            </div>
-                                        </div>
-                                     </div>
-
-                                     <div class="tab-pane fade" id="tab3">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                                     </div>
-                                     
-                                     <div class="tab-pane fade" id="tab4">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
-                                     </div>
-
-                                     <div class="tab-pane fade" id="tab5">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,</p>
-                                     </div>
-                              <!--  </div> <!--/.tab-content-->  
-                          <!--  </div> <!--/.media-body--> 
-                     <!--   </div> <!--/.media-->     
-                  <!--  </div><!--/.tab-wrap-->               
-               <!-- </div><!--/.col-sm-6-->
-
-               <!-- <div class="col-xs-12 col-sm-4 wow fadeInDown">
-                    <div class="testimonial">
-                        <h2>Testimonials</h2>
-                         <div class="media testimonial-inner">
-                            <div class="pull-left">
-                                <img class="img-responsive img-circle" src="<%=request.getContextPath() %>/images/testimonials1.png">
-                            </div>
-                            <div class="media-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                                <span><strong>-John Doe/</strong> Director of corlate.com</span>
-                            </div>
-                         </div>
-
-                         <div class="media testimonial-inner">
-                            <div class="pull-left">
-                                <img class="img-responsive img-circle" src="<%=request.getContextPath() %>/images/testimonials1.png">
-                            </div>
-                            <div class="media-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                                <span><strong>-John Doe/</strong> Director of corlate.com</span>
-                            </div>
-                         </div>
-
-                    </div>
-                </div>
-
-            </div><!--/.row-->
-       <!-- </div><!--/.container-->
-  <!--  </section><!--/#content-->
+	
 
     <section id="partner">
         <div class="container">
@@ -675,90 +362,7 @@
         </div><!--/.container-->
     </section><!--/#partner-->
 
-	<!--
-    <section id="conatcat-info">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="pull-left">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="media-body">
-                            <h2>Have a question or need a custom quote?</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation +0123 456 70 80</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.container-->    
-   <!-- </section><!--/#conatcat-info-->
-
-   <!-- <section id="bottom">
-        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">We are hiring</a></li>
-                            <li><a href="#">Meet the team</a></li>
-                            <li><a href="#">Copyright</a></li>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-
-              <!--  <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="#">Billing system</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-
-              <!--  <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Developers</h3>
-                        <ul>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">SEO Marketing</a></li>
-                            <li><a href="#">Theme</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Email Marketing</a></li>
-                            <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-
-            <!--    <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Our Partners</h3>
-                        <ul>
-                            <li><a href="#">Adipisicing Elit</a></li>
-                            <li><a href="#">Eiusmod</a></li>
-                            <li><a href="#">Tempor</a></li>
-                            <li><a href="#">Veniam</a></li>
-                            <li><a href="#">Exercitation</a></li>
-                            <li><a href="#">Ullamco</a></li>
-                            <li><a href="#">Laboris</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-           <!-- </div>
-        </div>
-    </section><!--/#bottom-->
+	
 
     <footer id="footer" class="midnight-blue">
         <div class="container">

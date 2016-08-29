@@ -265,10 +265,21 @@ input.search-form:hover {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
+  
+  /*其他浏览器header透明度设置*/
   background: rgba(0,0,0,0.5);
+  /*IE浏览器header透明度设置*/
+  /* background: transparent; 
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType = 0, startColorstr = #50000000, endColorstr = #50000000)\9; */
+ 
   padding: 15px 0;
   padding-bottom: 0;
 }
+
+:root .navbar-inverse{
+        filter: none;           for IE9
+}
+
 
  .navbar-nav{
   margin-top: 12px;
@@ -410,7 +421,7 @@ input.search-form:hover {
   position: absolute;
   width: 100%;
   display: block !important;
-  height: 730px;
+  height: 870px;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
