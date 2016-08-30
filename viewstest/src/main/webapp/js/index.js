@@ -3,6 +3,7 @@ $(function()
 			//显示查询代理，隐藏申请代理
 			$("#contact-page").hide();
 			$("#selectProxy").show();
+			$("#pDiv").hide();//隐藏代理查询结果列表div
 	
 			var provinceId = 'province';
 			var cityId = 'city';
@@ -27,6 +28,8 @@ function selectProxy() {
 	$("#contact-page").hide();
 	$("#selectProxy").show();
 	
+	selectProxys();//调用查询代理的方法
+	
 	/*切换选择按钮状态*/
 	$("#sPA").toggleClass( "aButActive", 1000 );//toggleClass中的第一个参数，若切换的对象有这个class就移除，没有就添加
 	$("#jPA").toggleClass( "aButActive", 1000 );//toggleClass中的第一个参数，若切换的对象有这个class就移除，没有就添加
@@ -35,6 +38,7 @@ function selectProxy() {
 function submitProxy() {
 	$("#contact-page").show();
 	$("#selectProxy").hide();
+	$("#pDiv").hide();//隐藏代理查询结果列表div
 	
 	/*切换选择按钮状态*/
 	$("#jPA").toggleClass( "aButActive", 1000 );//toggleClass中的第一个参数，若切换的对象有这个class就移除，没有就添加
@@ -91,7 +95,7 @@ function selectProxys()
         success: function (returndata) {
         	
         	var data = returndata;
-        	
+        	$("#pDiv").hide();//隐藏代理查询结果列表div
         	$("#proxyList").html("");
         	
         	var name ;
@@ -105,9 +109,17 @@ function selectProxys()
         			name = proxy.name;
         			tel = proxy.telephone;
         			address = proxy.address;
-        			html+='<div class="proxy"><div class="proxyName">代理商：'+name+'</div>   <div class="proxyTel">电话：'+tel+' </div><br> 地址：'+address+'  </div><br>';
+        			html+='<div class="proxy" ><div class="proxyName"><span style="font-weight:bold;color: lightcoral;">代理商：</span>'+name+'</div>  '+
+        			'<div class="proxyTel"><span style="font-weight:bold;color: lightcoral;">电话：</span>'+tel+' </div><br>'+
+        			'<span style="font-weight:bold;color: lightcoral;">地址：</span>'+address+'  </div><br>';
+        		}
+        	if(data.length>0)
+        		{
+        			$("#pDiv").show();//若查询有结果，显示代理查询结果列表div
+        		
         		}
         	$("#proxyList").html(html);
+        	
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             window.parent.location.href = contextPath + "/error.jsp";

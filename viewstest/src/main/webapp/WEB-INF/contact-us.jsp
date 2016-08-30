@@ -59,7 +59,7 @@
    #cDiv p{
    	margin-left: auto;
     margin-right: auto;
-    width: 310px;
+    width: 250px;
    }
    
    	#selectP{
@@ -79,18 +79,27 @@
 		background: rgba(255,239,211,0.5);
 	    border-radius: 5px;
 	    color: white;
-	    height: 20px;
-	    width: 150px;
+	    height: 35px;
+	    width: 120px;
 	    font-size: 15px;
 	    display: block;
 	    float: left;
 	    margin-right:5px;
+	    font-weight: bolder;
+	    text-shadow: 0 1px 1px rgba(0,0,0,1);/*文字阴影*/
+	    box-shadow: 3px 5px 10px white;/*阴影*/
 	}
 	.aButActive{
 		background: rgba(205,92,92,0.5);
    		 border-radius: 5px;
    		 color:white;
+   		 
 	}
+	/*超链接按钮字体样式*/
+	.paSpan{
+		vertical-align:middle;
+	}
+	
 	a:hover{
 		color:LightSeaGreen;
 	}
@@ -101,6 +110,13 @@
 		opacity: 0.7;/*css3属性*/
 		
 		filter:alpha(opacity=70);  /*半透明对于ie4~9需要使用滤镜功能实现*/
+	}
+	
+	/*代理信息查询结果样式*/
+	.proxy
+	{
+		    border-bottom-color: azure;
+  			  border-bottom-style: dotted;/*断点下划线*/
 	}
    	
    </style>
@@ -170,66 +186,15 @@
             <h2>当前已有<span id="totalUsers"
 								style="font-size: 40px; font-weight: bold; color: red">
 								</span> 位用户</h2>
-          		  <p class="lead" >
+          		  <p class="lead" style="height:35px;">
             			<a id="sPA" onclick="selectProxy()" class="aBut aButActive"  title="点击代理查询"
-								style="  cursor: pointer;">代理查询</a>
+								style="  cursor: pointer;"><span class="paSpan">代理查询</span></a>
 						<a id="jPA" onclick="submitProxy()"  title="点击申请代理" class="aBut"
-							style=" font-weight: bold; cursor: pointer;">加盟我们
+							style=" font-weight: bold; cursor: pointer;"><span class="paSpan">加盟我们</span>
 						</a>
 						</p>
         </div>
-      <!--  <div class="gmap-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5 text-center">
-                        <div class="gmap">
-                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=JoomShaper,+Dhaka,+Dhaka+Division,+Bangladesh&amp;aq=0&amp;oq=joomshaper&amp;sll=37.0625,-95.677068&amp;sspn=42.766543,80.332031&amp;ie=UTF8&amp;hq=JoomShaper,&amp;hnear=Dhaka,+Dhaka+Division,+Bangladesh&amp;ll=23.73854,90.385504&amp;spn=0.001515,0.002452&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=1073661719450182870&amp;output=embed"></iframe>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-7 map-content">
-                        <ul class="row">
-                            <li class="col-sm-6">
-                                <address>
-                                    <h5>Head Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-
-                                <address>
-                                    <h5>Zonal Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>                                
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-                            </li>
-
-
-                            <li class="col-sm-6">
-                                <address>
-                                    <h5>Zone#2 Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-
-                                <address>
-                                    <h5>Zone#3 Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>-->
+     
     </section>  <!--/gmap_area -->
 
     <section id="contact-page" >
@@ -302,7 +267,7 @@
         </div><!--/.container-->
     </section><!--/#contact-page-->
     
-    <section id="selectProxy" style="height:500px;">
+    <section id="selectProxy" style="min-height:600px;height:auto;">
         <div class="container" id="selectP">
             <div class="center">        
                 <h2>代理查询</h2>
@@ -331,8 +296,9 @@
                         </div>
                               
                     </div>
-                    <div class="col-sm-5">
-                        <div id="proxyList" class="col-md-8" style="margin-top: 20px;"></div>
+                    <div id="pDiv" class="col-sm-5" style="background: rgba(255, 239, 211, 0.5) none repeat scroll 0 0;
+    border-radius: 5px;margin-bottom:20px;">
+                        <div id="proxyList" class="col-md-8" style="margin-top: 20px;font-size: 15px;"></div>
                     </div>
                 </form> 
             </div><!--/.row-->
