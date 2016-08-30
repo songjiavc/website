@@ -41,37 +41,102 @@
 	
 </script>
    
+   <style type="text/css">
+   #zDiv{
+   	color:azure;
+   	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;"
+   }
+   
+   #cDiv h2,#selectProxy h2,#joinus h2{
+   		color:azure;
+   		font-size:30px;
+   }
+   
+   #applyProxy label{
+  	 color:azure !important;
+   }
+   
+   #cDiv p{
+   	margin-left: auto;
+    margin-right: auto;
+    width: 310px;
+   }
+   
+   	#selectP{
+   		/* background: rgba(255,239,211,0.5);
+   		 border-radius: 5px; */
+   	}
+   	
+   	#cDiv{
+   		   /*  width: 60%;
+		    margin-left: auto;
+		    margin-right: auto;
+		    background: rgba(255,239,211,0.5);
+   		 border-radius: 5px; */
+		}
+		
+	.aBut{
+		background: rgba(255,239,211,0.5);
+	    border-radius: 5px;
+	    color: white;
+	    height: 20px;
+	    width: 150px;
+	    font-size: 15px;
+	    display: block;
+	    float: left;
+	    margin-right:5px;
+	}
+	.aButActive{
+		background: rgba(205,92,92,0.5);
+   		 border-radius: 5px;
+   		 color:white;
+	}
+	a:hover{
+		color:LightSeaGreen;
+	}
+	
+	/*form表单标签半透明*/
+	.form-group input,.form-group select,.form-group textarea
+	{
+		opacity: 0.7;/*css3属性*/
+		
+		filter:alpha(opacity=70);  /*半透明对于ie4~9需要使用滤镜功能实现*/
+	}
+   	
+   </style>
+   
+   <!--[if IE]>
+	<style>
+	.navbar {
+	  border-radius: 0;
+	  margin-bottom: 0;
+	  
+	  /*其他浏览器header透明度设置*/
+	  background: rgba(0,0,0,0.5);
+	  /*IE浏览器header透明度设置*/
+	  background: transparent; 
+	  filter: progid:DXImageTransform.Microsoft.gradient(gradientType = 0, startColorstr = #50000000, endColorstr = #50000000)\9;
+	 
+	  padding: 15px 0;
+	  padding-bottom: 0;
+	}
+	
+	#selectP{
+  		 /*其他浏览器header透明度设置*/
+	  background: rgba(0,0,0,0.5);
+	  /*IE浏览器header透明度设置*/
+	  background: transparent; 
+	  filter: progid:DXImageTransform.Microsoft.gradient(gradientType = 0, startColorstr = #50000000, endColorstr = #50000000)\9;
+	 
+   	}
+	</style>
+	<![endif]-->
+   
 </head><!--/head-->
 
 <body>
 
     <header id="header">
-        <!-- <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-4">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>400-169-1810</p></div>
-                    </div>
-                    <div class="col-sm-6 col-xs-8">
-                       <div class="social">
-                            <ul class="social-share">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            </ul>
-                            <div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                           </div>
-                       </div>
-                    </div>
-                </div>
-            </div>/.container
-        </div> --><!--/.top-bar-->
 
         <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
@@ -97,17 +162,21 @@
             </div><!--/.container-->
         </nav><!--/nav-->
     </header><!--/header-->
+	
+	<div id="zDiv" style="background: url('<%=request.getContextPath() %>/images/banner3.jpg');">
 
     <section id="contact-info">
-        <div class="center">                
+        <div class="center" id="cDiv">                
             <h2>当前已有<span id="totalUsers"
 								style="font-size: 40px; font-weight: bold; color: red">
-								10658</span> 位用户</h2>
-            <p class="lead"><a  onclick="selectProxy()"  title="点击代理查询"
+								</span> 位用户</h2>
+          		  <p class="lead" >
+            			<a id="sPA" onclick="selectProxy()" class="aBut aButActive"  title="点击代理查询"
 								style="  cursor: pointer;">代理查询</a>
-								 <a onclick="submitProxy()"  title="点击申请代理"
-							style=" font-weight: bold; cursor: pointer;">申请代理
-						</a></p>
+						<a id="jPA" onclick="submitProxy()"  title="点击申请代理" class="aBut"
+							style=" font-weight: bold; cursor: pointer;">加盟我们
+						</a>
+						</p>
         </div>
       <!--  <div class="gmap-area">
             <div class="container">
@@ -164,7 +233,7 @@
     </section>  <!--/gmap_area -->
 
     <section id="contact-page" >
-        <div class="container">
+        <div class="container" id="joinus">
             <div class="center">        
                 <h2>加盟我们</h2>
                 <p class="lead">填写您的信息加入我们.</p>
@@ -233,8 +302,8 @@
         </div><!--/.container-->
     </section><!--/#contact-page-->
     
-    <section id="selectProxy" >
-        <div class="container">
+    <section id="selectProxy" style="height:500px;">
+        <div class="container" id="selectP">
             <div class="center">        
                 <h2>代理查询</h2>
                 <p class="lead">查询代理信息.</p>
@@ -269,72 +338,9 @@
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#selectProxy-->
-<!--
-    <section id="bottom">
-        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">We are hiring</a></li>
-                            <li><a href="#">Meet the team</a></li>
-                            <li><a href="#">Copyright</a></li>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-<!--
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="#">Billing system</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-<!--
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Developers</h3>
-                        <ul>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">SEO Marketing</a></li>
-                            <li><a href="#">Theme</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Email Marketing</a></li>
-                            <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-<!--
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Our Partners</h3>
-                        <ul>
-                            <li><a href="#">Adipisicing Elit</a></li>
-                            <li><a href="#">Eiusmod</a></li>
-                            <li><a href="#">Tempor</a></li>
-                            <li><a href="#">Veniam</a></li>
-                            <li><a href="#">Exercitation</a></li>
-                            <li><a href="#">Ullamco</a></li>
-                            <li><a href="#">Laboris</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-           <!--</div>
-        </div>
-    </section><!--/#bottom-->
+</div>
+    
+    
 
     <footer id="footer" class="midnight-blue">
         <div class="container">

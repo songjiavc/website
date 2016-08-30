@@ -31,6 +31,24 @@
     	}
     </style>
     
+    <!--[if IE]>
+	<style>
+	.navbar {
+	  border-radius: 0;
+	  margin-bottom: 0;
+	  
+	  /*其他浏览器header透明度设置*/
+	  background: rgba(0,0,0,0.5);
+	  /*IE浏览器header透明度设置*/
+	  background: transparent; 
+	  filter: progid:DXImageTransform.Microsoft.gradient(gradientType = 0, startColorstr = #50000000, endColorstr = #50000000)\9;
+	 
+	  padding: 15px 0;
+	  padding-bottom: 0;
+	}
+	</style>
+	<![endif]-->
+    
 </head><!--/head-->
 
 <body>

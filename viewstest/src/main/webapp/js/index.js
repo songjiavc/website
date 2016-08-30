@@ -21,16 +21,24 @@ $(function()
 			
 		});
 
+
+
 function selectProxy() {
 	$("#contact-page").hide();
 	$("#selectProxy").show();
+	
+	/*切换选择按钮状态*/
+	$("#sPA").toggleClass( "aButActive", 1000 );//toggleClass中的第一个参数，若切换的对象有这个class就移除，没有就添加
+	$("#jPA").toggleClass( "aButActive", 1000 );//toggleClass中的第一个参数，若切换的对象有这个class就移除，没有就添加
 }
 
 function submitProxy() {
 	$("#contact-page").show();
 	$("#selectProxy").hide();
 	
-	
+	/*切换选择按钮状态*/
+	$("#jPA").toggleClass( "aButActive", 1000 );//toggleClass中的第一个参数，若切换的对象有这个class就移除，没有就添加
+	$("#sPA").toggleClass( "aButActive", 1000 );//toggleClass中的第一个参数，若切换的对象有这个class就移除，没有就添加
 }
 
 //关闭bootstrap成功操作警示框操作

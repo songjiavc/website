@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
-<title>辽宁佰艺霖科技有限公司</title>
+<title>智能面板</title>
 <!-- core CSS -->
     <link href="<%=request.getContextPath() %>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<%=request.getContextPath() %>/css/font-awesome.css" rel="stylesheet"><!-- font-awesome.min -->
@@ -18,7 +18,7 @@
     <script src="<%=request.getContextPath() %>/js/html5shiv.js"></script>
     <script src="<%=request.getContextPath() %>/js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="<%=request.getContextPath() %>/images/ico/favicon.ico">
+    <link rel="shortcut icon" href="<%=request.getContextPath() %>/images/ico/favicon.ico"><!-- 网站标签页logo -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-72-precomposed.png">
@@ -198,56 +198,57 @@
         <div class="container">
            <div class="center wow fadeInDown">
                 <h2>我们的优势</h2>
-                <p class="lead">认真的态度造就我们优质的产品，也成为我们的优势</p>
+                <p class="lead">我们不卖电子走势图，只提供能够提高彩票销量的智能看板</p>
             </div>
 
             <div class="row">
                 <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="col-md-6 col-sm-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-bullhorn"></i>
-                            <h2>图表丰富，风格多样</h2>
-                            <h3>丰富的图表类型，可根据彩民的观看习惯灵活选用.</h3>
+                            <h2>匠心独运  安全稳定</h2>
+                            <h3>软硬件系统全部独立开发，保证软件与硬件的兼容度，全方位多角度保障系统运行的稳定性.</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="col-md-6 col-sm-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-comments"></i>
-                            <h2>横竖切换，上下滚屏</h2>
-                            <h3>横屏内容多,方便彩民进行横向的数据参考.竖屏期数多,方便彩民观看更多的开奖数据.</h3>
+                            <h2>数据稳定  行业最优</h2>
+                            <h3>佰艺霖采用更先进的数据采集方式、更互补的数据来源渠道，结合全天候人工监控保障数据稳定及时的更新.</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="col-md-6 col-sm-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-cloud-download"></i>
-                            <h2>专业传播媒介</h2>
-                            <h3>播放媒介范围广多种终端都可以直接打开我们的产品实现电子走势图的正常播放.</h3>
+                            <h2>简洁大气  交互便捷</h2>
+                            <h3>特制超强信号遥控设备，用更接地气儿的交互方式引爆站点彩民.</h3>
                         </div>
                     </div><!--/.col-md-4-->
                 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="col-md-6 col-sm-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-leaf"></i>
-                            <h2>数据稳定，更新及时</h2>
-                            <h3>采用当前先进的数据管理技术.全天候技术人员数据监控.</h3>
+                            <h2>千种视图 个性组合</h2>
+                            <h3>提供多款风格、多种皮肤，可组合成千种视图；遗漏、辅助线、遗漏层，个性设置组你想看.</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
-                    <!--<div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+					<div class="col-md-6 col-sm-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-cogs"></i>
-                            <h2>售后到家，安全保障</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h2>专业售后 全天守候</h2>
+                            <h3>提供全天候在线售后服务，解决您遇到的一切问题.</h3>
                         </div>
-                    </div>/.col-md-4-->
+                    </div><!--/.col-md-4-->
+                    
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="col-md-6 col-sm-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-heart"></i>
-                            <h2>售后到家，安全保障</h2>
-                            <h3>全天候售后开放，解决用户使用产品过程中的一切问题.</h3>
+                            <h2>国内首家组合式产品</h2>
+                            <h3>全国首家提出主副图概念并成功研发，从被动观看到主动交互，将个人痛点与群体需求进行完美结合.</h3>
                         </div>
                     </div><!--/.col-md-4-->
                 </div><!--/.services-->
@@ -352,11 +353,9 @@
 
             <div class="partners">
                 <ul>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="<%=request.getContextPath() %>/images/partners/partner1.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="<%=request.getContextPath() %>/images/partners/partner2.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="<%=request.getContextPath() %>/images/partners/partner3.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="<%=request.getContextPath() %>/images/partners/partner4.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="<%=request.getContextPath() %>/images/partners/partner5.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="<%=request.getContextPath() %>/images/baiyiilin.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="<%=request.getContextPath() %>/images/ticai.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="<%=request.getContextPath() %>/images/fucai.png"></a></li>
                 </ul>
             </div>        
         </div><!--/.container-->
