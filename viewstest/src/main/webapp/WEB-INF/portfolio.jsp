@@ -20,6 +20,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-57-precomposed.png">
+    
+    <style type="text/css">
+    	/*调整滑过缩略图的标题字体大小*/
+    	.portfolio-items h3{
+    		    font-size: 14px;
+    	}
+    </style>
+    
 </head><!--/head-->
 <body>
 
@@ -85,31 +93,122 @@
         
 
             <ul class="portfolio-filter text-center">
-                <li><a class="btn btn-default active" href="#" data-filter="*">所有产品</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".bootstrap">11选5</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".html">快乐十分</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".wordpress">12选5</a></li>
-				 <li><a class="btn btn-default" href="#" data-filter=".kuaisan">快三</a></li>
+                
+                <li><a id="clickbut" class="btn btn-default active " data-filter=".kuaisan">快三</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".11in5">11选5</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".klsf">快乐十分</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".12in5">12选5</a></li>
+                <li><a class="btn btn-default" href="#" data-filter="*">所有产品</a></li>
             </ul><!--/#portfolio-filter-->
 
             <div class="row">
                 <div class="portfolio-items">
+                	<!-- 快三图s -->
                    <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item1.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">快三走势图展示</a></h3>
-                                    <p></p>
-                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> 查看</a>
+                        <div class="recent-work-wrap"><%--这个class可以修改缩略图的布局距离 --%>
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin1.jpg" alt="" >
+                            <div class="overlay" >
+                                <div class="recent-work-inner" >
+                                    <h3><a href="#">快三</a></h3>
+                                    <p>图表内置功能</p>
+                                     <%--jquery.prettyPhoto.js：
+                                    	 rel="prettyPhoto[kuaisan]" :这个这么使用的意思的是jquery.prettyPhoto.js的一组照片，可以进行切换；
+                                    	rel="prettyPhoto"：这个这么使用的意思是单个照片展示	 --%>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin1.jpg" rel="prettyPhoto[kuaisan]">
+                                    <i class="fa fa-eye"></i> 查看</a>
                                 </div> 
                             </div>
                         </div>
                     </div><!--/.portfolio-item-->
+ 					<div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin2.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">快三</a></h3>
+                                    <p>三天数据，翻着看!</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin2.jpg" rel="prettyPhoto[kuaisan]"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+                    <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">快三</a></h3>
+                                    <p>多套副图，随意切换!</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin3.jpg" rel="prettyPhoto[kuaisan]"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+                    
+                    <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin4.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">快三</a></h3>
+                                    <p>你想要的，我们都有!</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin4.jpg" rel="prettyPhoto[kuaisan]"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+                    <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin5.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">快三</a></h3>
+                                    <p>四码复式及各类统计!</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin5.jpg" rel="prettyPhoto[kuaisan]"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+                    <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin6.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">快三</a></h3>
+                                    <p>开奖视频!</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin6.jpg" rel="prettyPhoto[kuaisan]"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+                    <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin7.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">快三</a></h3>
+                                    <p>遗漏及和值走势!</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin7.jpg" rel="prettyPhoto[kuaisan]"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+                    <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin8.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">快三</a></h3>
+                                    <p>自定义设置!</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/chanpin8.jpg" rel="prettyPhoto[kuaisan]"><i class="fa fa-eye"></i> 查看</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+					<!-- 快三图e -->
 
-
-
-                    <div class="portfolio-item  wordpress col-xs-12 col-sm-4 col-md-3">
+					<!-- 12选5s -->
+                    <div class="portfolio-item  12in5 col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
                             <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item3.png" alt="">
                             <div class="overlay">
@@ -122,7 +221,7 @@
                         </div>        
                     </div><!--/.portfolio-item-->
 
-                    <div class="portfolio-item joomla wordpress  col-xs-12 col-sm-4 col-md-3">
+                    <div class="portfolio-item  12in5  col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
                             <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item4.png" alt="">
                             <div class="overlay">
@@ -134,34 +233,8 @@
                             </div>
                         </div>           
                     </div><!--/.portfolio-item-->
-          
-                    <div class="portfolio-item joomla html  col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item5.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i>  查看</a>
-                                </div> 
-                            </div>
-                        </div>      
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item wordpress html  col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item6.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i>  查看</a>
-                                </div> 
-                            </div>
-                        </div>         
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item wordpress  col-xs-12 col-sm-4 col-md-3">
+                    
+                    <div class="portfolio-item 12in5  col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
                             <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item7.png" alt="">
                             <div class="overlay">
@@ -173,8 +246,39 @@
                             </div>
                         </div>          
                     </div><!--/.portfolio-item-->
+                    
+                    <!-- 12选5 e -->
+          
+          			<!-- 快乐十分 s -->
+                    <div class="portfolio-item  klsf  col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item5.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item5.png" rel="prettyPhoto[klsf]"><i class="fa fa-eye"></i>  查看</a>
+                                </div> 
+                            </div>
+                        </div>      
+                    </div><!--/.portfolio-item-->
 
-                    <div class="portfolio-item   bootstrap col-xs-12 col-sm-4 col-md-3">
+                    <div class="portfolio-item  klsf  col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item6.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item6.png" rel="prettyPhoto[klsf]"><i class="fa fa-eye"></i>  查看</a>
+                                </div> 
+                            </div>
+                        </div>         
+                    </div><!--/.portfolio-item-->
+                    <!-- 快乐十分 e -->
+
+
+                    <div class="portfolio-item   11in5 col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
                             <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item8.png" alt="">
                             <div class="overlay">
@@ -281,5 +385,6 @@
     <script src="<%=request.getContextPath() %>/js/jquery.isotope.min.js"></script>
     <script src="<%=request.getContextPath() %>/js/main.js"></script>
     <script src="<%=request.getContextPath() %>/js/wow.min.js"></script>
+    
 </body>
 </html>

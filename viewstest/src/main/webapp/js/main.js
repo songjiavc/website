@@ -22,8 +22,8 @@ jQuery(function($) {'use strict',
 
 	// portfolio filter
 	$(window).load(function(){'use strict';
-		var $portfolio_selectors = $('.portfolio-filter >li>a');
-		var $portfolio = $('.portfolio-items');
+		var $portfolio_selectors = $('.portfolio-filter >li>a');//获取所有的导航
+		var $portfolio = $('.portfolio-items');//获取所有的链接
 		$portfolio.isotope({
 			itemSelector : '.portfolio-item',
 			layoutMode : 'fitRows'
@@ -36,6 +36,10 @@ jQuery(function($) {'use strict',
 			$portfolio.isotope({ filter: selector });
 			return false;
 		});
+		
+		//触发第一个导航点击效果
+		var selector = $("#clickbut").attr('data-filter');
+		$portfolio.isotope({ filter: selector });
 	});
 
 	// Contact form

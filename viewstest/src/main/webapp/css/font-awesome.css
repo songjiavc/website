@@ -202,7 +202,7 @@
   content: "\f003";
 }
 .fa-heart:before {
-  content: "\f004";
+  content: "\f005";
 }
 .fa-star:before {
   content: "\f005";
@@ -501,7 +501,7 @@
   content: "\f06b";
 }
 .fa-leaf:before {
-  content: "\f06c";
+  content: "\f110";
 }
 .fa-fire:before {
   content: "\f06d";
@@ -572,7 +572,7 @@
 }
 .fa-gears:before,
 .fa-cogs:before {
-  content: "\f085";
+  content: "\f0c0";
 }
 .fa-comments:before {
   content: "\f086";
@@ -650,7 +650,7 @@
   content: "\f0a0";
 }
 .fa-bullhorn:before {
-  content: "\f0a1";
+  content: "\f085";
  /* content:url(../images/testimonials1.png); */
 }
 .fa-bell:before {
@@ -821,7 +821,7 @@
   content: "\f0e5";
 }
 .fa-comments-o:before {
-  content: "\f0e6";
+  content: "\f0e8";
 }
 .fa-flash:before,
 .fa-bolt:before {
@@ -844,7 +844,7 @@
   content: "\f0ec";
 }
 .fa-cloud-download:before {
-  content: "\f0ed";
+  content: "\f0f7";
 }
 .fa-cloud-upload:before {
   content: "\f0ee";
