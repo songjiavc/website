@@ -124,7 +124,7 @@
 					 <!-- 轮播（Carousel）项目 -->
 					<div class="carousel-inner">
 						<div class="item active" >
-							<img src="<%=request.getContextPath() %>/images/u109.jpg" class="img-responsive" alt=""> 
+							<img src="<%=request.getContextPath() %>/images/anli1.jpg" class="img-responsive" alt=""> 
 						</div><!--/.item-->
 					   <div class="item">
 							<img src="<%=request.getContextPath() %>/images/u19.jpg" class="img-responsive" alt=""> 
