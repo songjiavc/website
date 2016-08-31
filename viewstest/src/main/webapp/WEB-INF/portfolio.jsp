@@ -26,6 +26,9 @@
     	.portfolio-items h3{
     		    font-size: 14px;
     	}
+    	.portfolio-items{
+    		cursor:pointer;
+    	}
     </style>
     
     <!--[if IE]>
@@ -114,8 +117,8 @@
                 
                 <li><a id="clickbut" class="btn btn-default active " data-filter=".kuaisan">快三</a></li>
                 <li><a class="btn btn-default" href="#" data-filter=".11in5">11选5</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".klsf">快乐十分</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".12in5">12选5</a></li>
+               <!--  <li><a class="btn btn-default" href="#" data-filter=".klsf">快乐十分</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".12in5">12选5</a></li> -->
                 <li><a class="btn btn-default" href="#" data-filter="*">所有产品</a></li>
             </ul><!--/#portfolio-filter-->
 
@@ -191,7 +194,7 @@
                         <div class="recent-work-wrap">
                             <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin6.jpg" alt="">
                             <div class="overlay">
-                                <div class="recent-work-inner">
+                                <div class="recent-work-inner" >
                                     <h3><a href="#">快三</a></h3>
                                     <p>开奖视频!</p>
                                     <a class="preview" href="<%=request.getContextPath() %>/images/chanpin6.jpg" rel="prettyPhoto[kuaisan]"><i class="fa fa-eye"></i> 查看</a>
@@ -226,7 +229,7 @@
 					<!-- 快三图e -->
 
 					<!-- 12选5s -->
-                    <div class="portfolio-item  12in5 col-xs-12 col-sm-4 col-md-3">
+                    <%-- <div class="portfolio-item  12in5 col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
                             <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item3.png" alt="">
                             <div class="overlay">
@@ -263,12 +266,12 @@
                                 </div> 
                             </div>
                         </div>          
-                    </div><!--/.portfolio-item-->
+                    </div> --%><!--/.portfolio-item-->
                     
                     <!-- 12选5 e -->
           
           			<!-- 快乐十分 s -->
-                    <div class="portfolio-item  klsf  col-xs-12 col-sm-4 col-md-3">
+                   <%--  <div class="portfolio-item  klsf  col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
                             <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item5.png" alt="">
                             <div class="overlay">
@@ -292,7 +295,7 @@
                                 </div> 
                             </div>
                         </div>         
-                    </div><!--/.portfolio-item-->
+                    </div> --%><!--/.portfolio-item-->
                     <!-- 快乐十分 e -->
 
 
@@ -381,18 +384,21 @@
 
     <footer id="footer" class="midnight-blue">
         <div class="container">
-             <div class="row">
-                <div class="col-sm-8">
-                    Copyright &copy; 2016.Company name All rights reserved.友情链接：<a href="http://www.cwl.gov.cn/"  target="_blank">中国福彩网</a>  <a href="http://www.lottery.gov.cn/"  target="_blank">中国体彩网</a>
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    	友情链接：<a target="_blank" href="http://www.cwl.gov.cn/"  target="_blank">中国福彩网</a>  <a  target="_blank" href="http://www.lottery.gov.cn/"  target="_blank">中国体彩网</a>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3 col-xs-12">
                     <ul class="pull-right">
-                       <li ><a href="http://www.cai810.com">首页</a></li>
-                        <li ><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
-                        <li ><a href="<%=request.getContextPath() %>/proxy/chanpin.action"" >产品</a></li>
-                        <li ><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>   
+                       <li><a href="http://www.cai810.com">首页</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>   
                     </ul>
                 </div>
+                <div class="col-sm-3 col-xs-12">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i><a href="tel:400-169-1810" title="点击拨打公司电话">400-169-1810</a></p></div>
+                 </div>
             </div>
         </div>
     </footer><!--/#footer-->
@@ -403,6 +409,23 @@
     <script src="<%=request.getContextPath() %>/js/jquery.isotope.min.js"></script>
     <script src="<%=request.getContextPath() %>/js/main.js"></script>
     <script src="<%=request.getContextPath() %>/js/wow.min.js"></script>
+    
+    <script type="text/javascript">
+    /*
+    	Jquery获取子元素的方法有2种，分别是children()方法和find()方法。
+		1.children()方法：获取该元素下的直接子集元素
+		2.find()方法：获取该元素下的所有子集元素
+		3.children()方法获取ul下面直接子集元素li：$("ul").children("li")
+		4.find()方法获取ul下所有元素li：$("ul").find("li")
+		5.children和find的区别：children只会查找直接子集，而find会跨越层级查找，一直找到没有为止。
+    */
+    	$(function(){
+    		$(".portfolio-items").children("div").bind("click",function()
+    				{
+    					$(this).find(".preview").click();
+    				});
+    	});
+    </script>
     
 </body>
 </html>

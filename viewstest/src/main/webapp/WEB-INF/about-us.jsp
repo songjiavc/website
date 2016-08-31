@@ -208,7 +208,7 @@
 									<!-- <a href="#"><img class="media-object" src="<%=request.getContextPath() %>/images/man1.jpg" alt=""></a> -->
 								</div>
 								<div class="media-body">
-									<h4>沈阳某站主</h4>
+									<h4>辽宁王姓用户</h4>
 									<!-- <h5>Founder and CEO</h5> -->
 									<!-- <ul class="tag clearfix">
 										<li class="btn"><a href="#">Web</a></li>
@@ -224,7 +224,7 @@
 									</ul> -->
 								</div>
 							</div><!--/.media -->
-							<p>以前每期都要手写开奖号，十分钟一次，一天就要写八、九十次，还要顾着收钱、打彩票。现在好了，用上“百宝彩”之后，我轻松多了，能够专心给彩民打彩票，还能多出些时间跟彩民交流，多向他们销售一些即开票.</p>
+							<p>以前使用的是其他牌子的电子走势图，受屏幕所限，显示的内容太少了，前三玩法的彩民与任选玩法的彩民总是争来争去的。 使用智能看板后，我设置了前三幅图与任选幅图40秒轮播，这次谁也不争，都能看到了，更关键的是主图的开奖号码分布是不动的，不影响其他彩民正常观看.</p>
 						</div>
 					</div><!--/.col-lg-4 -->
 					
@@ -236,7 +236,7 @@
 									<!-- <a href="#"><img class="media-object" src="<%=request.getContextPath() %>/images/man2.jpg" alt=""></a> -->
 								</div>
 								<div class="media-body">
-									<h4>黑龙江某站主</h4>
+									<h4>河北唐姓用户</h4>
 									<!-- <h5>Founder and CEO</h5>
 									<ul class="tag clearfix">
 										<li class="btn"><a href="#">Web</a></li>
@@ -251,8 +251,7 @@
 									</ul> -->
 								</div>
 							</div><!--/.media -->
-							<p>彩站统一装修
-业主在使用了我们统一的装修风格之后，彩民们在更好的购彩环境中购买彩票，彩票的销售量提高了呐！.</p>
+							<p>特别喜欢智能看板的数据推荐板块，每期都有专家推荐购买方案，而且还有预测的历史记录，大大提高了高频彩种的销量。希望佰艺霖推出更多专家预测内容，智能看板将是我们彩票站点提高销量的有力武器。</p>
 						</div>
 					</div><!--/.col-lg-4 -->					
 				</div> <!--/.row -->
@@ -283,8 +282,8 @@
 								</div>
 
 								<div class="media-body">
-									<h4>Jhon Doe</h4>
-									<h5>Founder and CEO</h5>
+									<h4>安徽阎姓用户</h4>
+									<!-- <h5>Founder and CEO</h5>
 									<ul class="tag clearfix">
 										<li class="btn"><a href="#">Web</a></li>
 										<li class="btn"><a href="#">Ui</a></li>
@@ -295,10 +294,10 @@
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
 										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
+									</ul> -->
 								</div>
 							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+							<p>以前每期都要手写开奖号码，偶尔下午上班，还要将以前开过的数据一一填写到手写号码盘上，浪费时间就是浪费销量啊！ 使用智能看板后，随用随开、自动更新，我有更多的时间为彩民服务啦，销量蒸蒸日上！</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-md-offset-2">
@@ -308,22 +307,23 @@
 									<!-- <a href="#"><img class="media-object" src="<%=request.getContextPath() %>/images/man4.jpg" alt=""></a> -->
 								</div>
 								<div class="media-body">
-									<h4>Jhon Doe</h4>
-									<h5>Founder and CEO</h5>
+									<h4>内蒙朱姓用户</h4>
+									<!-- <h5>Founder and CEO</h5>
 									<ul class="tag clearfix">
 										<li class="btn"><a href="#">Web</a></li>
 										<li class="btn"><a href="#">Ui</a></li>
 										<li class="btn"><a href="#">Ux</a></li>
 										<li class="btn"><a href="#">Photoshop</a></li>
-									</ul>
+									</ul> 
 									<ul class="social_icons">
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
 										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
+									</ul>-->
 								</div>
 							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+							<p>
+							以前使用是别人的电子走势图，随便去几个站点，使用的样式都跟我家用的一样，一点个性都没有。 智能看板可以通过遥控器随意组合样式，我自己组合的样式全市估计也是独一份的。据说现在我家彩民去别站看走势图都没有感觉了，没想到这个东西还能培养彩民的粘性</p>
 						</div>
 					</div>
 				</div>	<!--/.row-->
@@ -399,18 +399,21 @@
 
     <footer id="footer" class="midnight-blue">
         <div class="container">
-             <div class="row">
-                <div class="col-sm-8">
-                    Copyright &copy; 2016.Company name All rights reserved.友情链接：<a href="http://www.cwl.gov.cn/"  target="_blank">中国福彩网</a>  <a href="http://www.lottery.gov.cn/"  target="_blank">中国体彩网</a>
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    	友情链接：<a target="_blank" href="http://www.cwl.gov.cn/"  target="_blank">中国福彩网</a>  <a  target="_blank" href="http://www.lottery.gov.cn/"  target="_blank">中国体彩网</a>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3 col-xs-12">
                     <ul class="pull-right">
-                       <li ><a href="http://www.cai810.com">首页</a></li>
-                        <li ><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action"" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>   
+                       <li><a href="http://www.cai810.com">首页</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>   
                     </ul>
                 </div>
+                <div class="col-sm-3 col-xs-12">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i><a href="tel:400-169-1810" title="点击拨打公司电话">400-169-1810</a></p></div>
+                 </div>
             </div>
         </div>
     </footer><!--/#footer-->

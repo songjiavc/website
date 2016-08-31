@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
-<title>智能面板</title>
+<title>辽宁佰艺霖科技有限公司</title>
 <!-- core CSS -->
     <link href="<%=request.getContextPath() %>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<%=request.getContextPath() %>/css/font-awesome.css" rel="stylesheet"><!-- font-awesome.min -->
@@ -18,7 +18,7 @@
     <script src="<%=request.getContextPath() %>/js/html5shiv.js"></script>
     <script src="<%=request.getContextPath() %>/js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="<%=request.getContextPath() %>/images/ico/favicon.ico"><!-- 网站标签页logo -->
+    <link rel="shortcut icon" href="<%=request.getContextPath() %>/images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-72-precomposed.png">
@@ -90,13 +90,13 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
                         <!-- 本地测试的导航 -->
-                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                        <%-- <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li> 
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>  --%>
                         <!-- 部署到服务器的导航 -->
-                       <%--  <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>    --%>                      
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>                         
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -111,20 +111,39 @@
                 <li data-target="#main-slider" data-slide-to="1"></li>
                 <li data-target="#main-slider" data-slide-to="2"></li>
 				<li data-target="#main-slider" data-slide-to="3"></li>
+				<li data-target="#main-slider" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
 
-                <div class="item active" style="background-image: url(<%=request.getContextPath() %>/images/banner1.jpg)">
+                <div class="item active" style="background-image: url(<%=request.getContextPath() %>/images/play.jpg);cursor:pointer;" onclick="play()">
+               		<%-- <img class="img-responsive" src="<%=request.getContextPath() %>/images/banner1.jpg"  > --%>
+                                    
                     <div class="container">
                         <div class="row slide-margin">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-sm-offset-4">
+                                <div class="carousel-content">
+                                     <a id="previewa" class="preview" href="<%=request.getContextPath() %>/images/baiyilin.swf?width=640&height=480" rel="prettyPhoto[flash]">
+                     				
+                     				 </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                
+                <div class="item" style="background-image: url(<%=request.getContextPath() %>/images/banner1.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                             <div class="col-sm-6">
+                             	<%--添加内部文字链接方法： --%>
                                <!--  <div class="carousel-content">
-                                    <h1 class="animation animated-item-1">中国较早的电子走势图产品服务商</h1>
-                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                    <h1 class="animation animated-item-1"><a href="http://www.baidu.com" target="_blank">百度</a></h1>
                                 </div> -->
                             </div>
 
+                            
 
                         </div>
                     </div>
@@ -392,6 +411,11 @@
     <script type="text/javascript">
 	//幻灯片自动轮播
         $('.carousel').carousel();
+	//触发播放视频的超链接
+	function play()
+	{
+		$('#previewa').click();
+	}
     </script>
 </body>
 </html>
