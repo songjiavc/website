@@ -24,6 +24,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-57-precomposed.png">
     
+     <link href="<%=request.getContextPath() %>/css/skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+    
     <!--[if IE]>
 	<style>
 	.navbar {
@@ -92,7 +94,7 @@
                         <!-- 本地测试的导航 -->
                         <%-- <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>  --%>
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li> --%> 
                         <!-- 部署到服务器的导航 -->
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
@@ -120,14 +122,15 @@
                                     
                     <div class="container">
                         <div class="row slide-margin">
-                            <div class="col-sm-6 col-sm-offset-4">
+                            <%-- <div class="col-sm-6 col-sm-offset-4">
                                 <div class="carousel-content">
-                                     <a id="previewa" class="preview" href="<%=request.getContextPath() %>/images/baiyilin.swf?width=640&height=480" rel="prettyPhoto[flash]">
+                                     <a id="previewa" class="preview" href="<%=request.getContextPath() %>/images/baiyilin.mov?width=640&height=360" 
+                                     rel="prettyPhoto[iframe]">
                      				
                      				 </a>
                                 </div>
-                            </div>
-
+                            </div> --%>
+						
 
                         </div>
                     </div>
@@ -372,9 +375,9 @@
 
             <div class="partners">
                 <ul>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="<%=request.getContextPath() %>/images/baiyiilin.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="<%=request.getContextPath() %>/images/ticai.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="<%=request.getContextPath() %>/images/fucai.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="<%=request.getContextPath() %>/images/baiyilin.jpg"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="<%=request.getContextPath() %>/images/ticai.jpg"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="<%=request.getContextPath() %>/images/fucai.jpg"></a></li>
                 </ul>
             </div>        
         </div><!--/.container-->
@@ -408,14 +411,133 @@
     <script src="<%=request.getContextPath() %>/js/jquery.isotope.min.js"></script><!-- isotope自动布局插件-->
     <script src="<%=request.getContextPath() %>/js/main.js"></script>
     <script src="<%=request.getContextPath() %>/js/wow.min.js"></script><!--实现了在网页滚动时的动画效果，有漂亮的动画效果，依赖于Animate.css-->
-    <script type="text/javascript">
+   
+	<script type="text/javascript" src="<%=request.getContextPath() %>/js/dist/jplayer/jquery.jplayer.min.js"></script>
+	<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				/* title: "佰艺霖宣传片", */
+				m4v:"<%=request.getContextPath() %>/images/baiyilin.mp4",
+				/* ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv", */
+				webmv: "<%=request.getContextPath() %>/images/baiyilin.webm",/*firefox支持视频格式*/
+				poster: "<%=request.getContextPath() %>/images/playbs.jpg"
+			});
+		},
+		swfPath: "<%=request.getContextPath() %>/js/dist/jplayer",
+		supplied: "webmv, ogv, m4v",
+		wmode:"window",
+		size: {
+			width: "640px",
+			height: "360px",
+			cssClass: "jp-video-360p"
+		},
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		remainingDuration: true,
+		toggleDuration: true,
+		
+	});
+	
+	//modal居中--开始
+	function centerModals() {   
+	    $('#myModal').each(function(i) {   
+	        var $clone = $(this).clone().css('display', 'block').appendTo('body'); var top = Math.round(($clone.height() - $clone.find('.modal-content').height()) / 2);   
+	        top = top > 0 ? top : 0;   
+	        $clone.remove();   
+	        $(this).find('.modal-content').css("margin-top", top);   
+	    });   
+	}   
+	$('#myModal').on('show.bs.modal', centerModals);   
+	$(window).on('resize', centerModals); 
+	//modal居中--结束
+	
+	//在modal隐藏时触发，在点击空白处modal关闭时的监听
+	$('#myModal').on('hidden.bs.modal', stopPlayer); 
+
+});
+//]]>
+</script>
+
+<script type="text/javascript">
 	//幻灯片自动轮播
         $('.carousel').carousel();
 	//触发播放视频的超链接
 	function play()
 	{
-		$('#previewa').click();
+		/* $('#previewa').click(); */
+		$('#myModal').modal('show');
+	}
+	
+	function stopPlayer()
+	{
+		$("#jquery_jplayer_1").jPlayer("stop");
 	}
     </script>
+    
+
+<!-- 模态框（Modal） --> 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" draggable="true"> 
+    <div class="modal-dialog" style="width:680px;height:440px;"> 
+        <div class="modal-content"> 
+            <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="stopPlayer()">&times;</button> 
+                <h4 class="modal-title" id="myModalLabel"></h4> 
+            </div> 
+            <div class="modal-body">
+            <!-- 播放器开始 -->
+           <div id="jp_container_1" class="jp-video jp-video-360p" role="application" aria-label="media player">
+				<div class="jp-type-single">
+					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+						<div class="jp-gui">
+							<div class="jp-video-play">
+								<button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+							</div>
+							<div class="jp-interface">
+								<div class="jp-progress">
+									<div class="jp-seek-bar">
+										<div class="jp-play-bar"></div>
+									</div>
+								</div>
+								<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+								<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+								<div class="jp-controls-holder">
+									<div class="jp-controls">
+										<button class="jp-play" role="button" tabindex="0">play</button>
+										<button class="jp-stop" role="button" tabindex="0">stop</button>
+									</div>
+									<div class="jp-volume-controls">
+										<button class="jp-mute" role="button" tabindex="0">mute</button>
+										<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+										<div class="jp-volume-bar">
+											<div class="jp-volume-bar-value"></div>
+										</div>
+									</div>
+									<div class="jp-toggles">
+										<!-- <button class="jp-repeat" role="button" tabindex="0">repeat</button> -->
+										<button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+									</div>
+								</div>
+								<!-- <div class="jp-details">
+									<div class="jp-title" aria-label="title">&nbsp;</div>
+								</div> -->
+							</div>
+						</div>
+						<div class="jp-no-solution">
+							<span></span>
+						</div>
+					</div>
+				</div> 	
+				<!-- 播放器结束 -->
+            </div> 
+        </div><!-- /.modal-content --> 
+    </div><!-- /.modal --> 
+</div>
+
 </body>
 </html>
