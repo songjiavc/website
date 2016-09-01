@@ -24,7 +24,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-57-precomposed.png">
     
-     <link href="<%=request.getContextPath() %>/css/skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+     <link href="<%=request.getContextPath() %>/css/skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" /><!-- 视频播放插件jplayer的css -->
     
     <!--[if IE]>
 	<style>
@@ -92,7 +92,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
                         <!-- 本地测试的导航 -->
-                      <%--   <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                        <%-- <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li> --%> 
                         <!-- 部署到服务器的导航 -->
@@ -122,7 +122,10 @@
                                     
                     <div class="container">
                         <div class="row slide-margin">
-                            <%-- <div class="col-sm-6 col-sm-offset-4">
+                       
+                            <%--
+                             <!-- 使用flash实现的视频播放 -->
+                             <div class="col-sm-6 col-sm-offset-4">
                                 <div class="carousel-content">
                                      <a id="previewa" class="preview" href="<%=request.getContextPath() %>/images/baiyilin.mov?width=640&height=360" 
                                      rel="prettyPhoto[iframe]">
@@ -412,7 +415,7 @@
     <script src="<%=request.getContextPath() %>/js/main.js"></script>
     <script src="<%=request.getContextPath() %>/js/wow.min.js"></script><!--实现了在网页滚动时的动画效果，有漂亮的动画效果，依赖于Animate.css-->
    
-	<script type="text/javascript" src="<%=request.getContextPath() %>/js/dist/jplayer/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="<%=request.getContextPath() %>/js/dist/jplayer/jquery.jplayer.min.js"></script><!-- 视频播放插件jplayer的js -->
 	<script type="text/javascript">
 //<![CDATA[
 $(document).ready(function(){
@@ -473,7 +476,7 @@ $(document).ready(function(){
 		/* $('#previewa').click(); */
 		$('#myModal').modal('show');
 	}
-	
+	//停止视频播放方法
 	function stopPlayer()
 	{
 		$("#jquery_jplayer_1").jPlayer("stop");
@@ -534,7 +537,7 @@ $(document).ready(function(){
 					</div>
 				</div> 	
 				<!-- 播放器结束 -->
-            </div> 
+            </div> <!-- /.modal-body --> 
         </div><!-- /.modal-content --> 
     </div><!-- /.modal --> 
 </div>
