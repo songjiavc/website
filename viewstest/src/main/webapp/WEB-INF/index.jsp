@@ -7,6 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
 <title>辽宁佰艺霖科技有限公司</title>
+<!--首页-->
 <!-- core CSS -->
     <link href="<%=request.getContextPath() %>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<%=request.getContextPath() %>/css/font-awesome.css" rel="stylesheet"><!-- font-awesome.min -->

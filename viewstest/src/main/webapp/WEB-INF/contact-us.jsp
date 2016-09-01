@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>辽宁佰艺霖科技有限公司</title>
-
+<!-- 加盟我们-->
 <!-- core CSS -->
     <link href="<%=request.getContextPath() %>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<%=request.getContextPath() %>/css/font-awesome.min.css" rel="stylesheet">

@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>辽宁佰艺霖科技有限公司</title>
+<!-- 产品页面 -->
 <link href="<%=request.getContextPath() %>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<%=request.getContextPath() %>/css/font-awesome.min.css" rel="stylesheet">
     <link href="<%=request.getContextPath() %>/css/prettyPhoto.css" rel="stylesheet">
