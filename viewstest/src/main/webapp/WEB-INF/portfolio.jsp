@@ -4,6 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="baidu-site-verification" content="ZnOIKDkQvp" />
+<meta name="keywords" content="电子走势图,baiyilin,佰艺霖,智能看板,佰艺霖官网">
+<meta name="description" content="我们不卖电子走势图，只提供能够提高彩票销量的智能看板,客户的优质评价是对我们产品的最大肯定,我们的产品分为多个彩种，例如快三，11选5等等" />
 <title>辽宁佰艺霖科技有限公司</title>
 <!-- 产品页面 -->
 <link href="<%=request.getContextPath() %>/css/bootstrap.min.css" rel="stylesheet">
