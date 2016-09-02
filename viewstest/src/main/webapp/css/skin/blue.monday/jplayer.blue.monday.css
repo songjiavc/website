@@ -51,6 +51,27 @@
 .jp-video-360p {
 	width:640px;
 }
+
+/* add by myself*/
+.jp-video-460p {
+	width:740px;
+}
+
+.jp-video-270p .jp-video-play {
+	margin-top:-270px;
+	height:270px;
+}
+.jp-video-360p .jp-video-play {
+	margin-top:-360px;
+	height:360px;
+}
+
+/* add by myself*/
+.jp-video-460p .jp-video-play {
+	margin-top:-460px;
+	height:460px;
+}
+
 .jp-video-full {
 	/* Rules for IE6 (full-screen) */
 	width:480px;
@@ -463,14 +484,7 @@ span.jp-artist {
 	cursor:pointer;
 	background-color:rgba(0,0,0,0); /* Makes IE9 work with the active area over the whole video area. IE6/7/8 only have the button as active area. */
 }
-.jp-video-270p .jp-video-play {
-	margin-top:-270px;
-	height:270px;
-}
-.jp-video-360p .jp-video-play {
-	margin-top:-360px;
-	height:360px;
-}
+
 .jp-video-full .jp-video-play {
 	height:100%;
 }

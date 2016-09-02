@@ -435,9 +435,9 @@ $(document).ready(function(){
 		supplied: "webmv, ogv, m4v",
 		wmode:"window",
 		size: {
-			width: "640px",
-			height: "360px",
-			cssClass: "jp-video-360p"
+			width: "740px",
+			height: "460px",
+			cssClass: "jp-video-460p"
 		},
 		useStateClassSkin: true,
 		autoBlur: false,
@@ -487,7 +487,7 @@ $(document).ready(function(){
 
 <!-- 模态框（Modal） --> 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" draggable="true"> 
-    <div class="modal-dialog" style="width:680px;height:440px;"> 
+    <div class="modal-dialog" style="width:780px;height:540px;"> 
         <div class="modal-content"> 
             <div class="modal-header"> 
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="stopPlayer()">&times;</button> 
@@ -495,7 +495,7 @@ $(document).ready(function(){
             </div> 
             <div class="modal-body">
             <!-- 播放器开始 -->
-           <div id="jp_container_1" class="jp-video jp-video-360p" role="application" aria-label="media player">
+           <div id="jp_container_1" class="jp-video jp-video-460p" role="application" aria-label="media player">
 				<div class="jp-type-single">
 					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 						<div class="jp-gui">
