@@ -29,10 +29,14 @@ import com.byl.manager.common.utils.DateUtil;
 import com.byl.manager.common.utils.QueryResult;
 import com.byl.manager.proxy.dto.AgentListDto;
 import com.byl.manager.proxy.entity.ApplyProxy;
+import com.byl.manager.proxy.entity.Article;
 import com.byl.manager.proxy.entity.Station;
+import com.byl.manager.proxy.entity.Uploadfile;
 import com.byl.manager.proxy.entity.User;
 import com.byl.manager.proxy.service.ApplyProxyService;
+import com.byl.manager.proxy.service.ArticleService;
 import com.byl.manager.proxy.service.StationService;
+import com.byl.manager.proxy.service.UploadfileService;
 import com.byl.manager.proxy.service.UserService;
 
 @RequestMapping("proxy")
@@ -54,6 +58,12 @@ public class ProxyController
 	
 	@Autowired
 	private StationService stationService;
+	
+	@Autowired
+	private ArticleService articleService;
+	
+	@Autowired
+	private UploadfileService uploadfileService;
 	
 	/**
 	 * 
@@ -281,6 +291,68 @@ public class ProxyController
 		}
 		return agentListDto;
 	}
+	
+	/**
+	 * 获取文章列表数据
+	 * @param model
+	 * @param httpSession
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping(value = "/getArticleList", method = RequestMethod.GET)
+	public @ResponseBody List<Article> getArticleList(ModelMap model,HttpSession httpSession) throws Exception
+	{
+		
+		Pageable pageable = new PageRequest(0, Integer.MAX_VALUE);
+		//参数
+		StringBuffer buffer = new StringBuffer();
+		
+		LinkedHashMap<String, String> orderBy = new LinkedHashMap<String, String>();
+		orderBy.put("id", "desc");
+		List<Object> params = new ArrayList<Object>();
+		//只查询未删除数据
+		params.add(Constants.IS_NOT_DELETED);//只查询有效的数据
+		buffer.append(" isDeleted = ?").append(params.size());
+		
+		QueryResult<Article> arQueryResult
+		= articleService.getArticleList(Article.class, buffer.toString(), params.toArray(),
+				orderBy, pageable);
+		
+		
+		List<Article> articles = arQueryResult.getResultList();
+		
+		
+		return articles;
+	}
+	
+	/**
+	 * 根据newsuuid获取当前文章对应的图片附件
+	 * @param uplId
+	 * @param model
+	 * @param httpSession
+	 * @return
+	 * @throws Exception
+	 */
+	 @RequestMapping(value = "/getFileOfAppad", method = RequestMethod.GET)
+		public @ResponseBody List<Uploadfile>  getFileOfAppad(
+				@RequestParam(value="uplId",required=false) String uplId,
+				ModelMap model,HttpSession httpSession) throws Exception {
+		 
+		 List<Uploadfile> uploadfiles = new ArrayList<Uploadfile>();
+		 if(!"".equals(uplId))
+		 {
+			 uploadfiles = uploadfileService.getUploadfilesByNewsUuid(uplId);
+			 
+	 		 if(uploadfiles.size()==0)
+			 {
+				 Uploadfile uploadfile = new Uploadfile();
+				 uploadfiles.add(uploadfile);
+			 }
+			 
+		 }
+		 
+		 return uploadfiles;
+	 }
 	
 	
 

@@ -25,6 +25,23 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<%=request.getContextPath() %>/images/ico/apple-touch-icon-57-precomposed.png">
     
+    <script>
+		var contextPath = '<%=request.getContextPath() %>';
+		
+		/* //从一个页面获取另一个页面的url
+	    function getQueryString(name) {
+	    	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+	    	var r = window.location.search.substr(1).match(reg);
+	    	if (r != null) 
+	    		return unescape(r[2]); 
+	    	return null;
+	    }
+		 */
+		
+		
+		
+	</script>
+    
     <style type="text/css">
     	/*调整滑过缩略图的标题字体大小*/
     	.portfolio-items h3{
@@ -33,6 +50,17 @@
     	.portfolio-items{
     		cursor:pointer;
     	}
+    	
+    	.about-top h1 {
+		    font-size: 3em;
+		    color: gray;
+		    font-family: 'HammersmithOne-Regular';
+		    margin: 0 15px;
+		}
+		
+		.clearfix{
+			margin-bottom: 40px;
+		}
     </style>
     
     <!--[if IE]>
@@ -319,72 +347,55 @@
             </div>
         </div>
     </section><!--/#portfolio-item-->
-    <!--
+    
     <section id="bottom">
-        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">We are hiring</a></li>
-                            <li><a href="#">Meet the team</a></li>
-                            <li><a href="#">Copyright</a></li>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-<!--
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="#">Billing system</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-<!--
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Developers</h3>
-                        <ul>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">SEO Marketing</a></li>
-                            <li><a href="#">Theme</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Email Marketing</a></li>
-                            <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-<!--
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Our Partners</h3>
-                        <ul>
-                            <li><a href="#">Adipisicing Elit</a></li>
-                            <li><a href="#">Eiusmod</a></li>
-                            <li><a href="#">Tempor</a></li>
-                            <li><a href="#">Veniam</a></li>
-                            <li><a href="#">Exercitation</a></li>
-                            <li><a href="#">Ullamco</a></li>
-                            <li><a href="#">Laboris</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-           <!-- </div>
-        </div>
-    </section><!--/#bottom-->
+       <div  class="container">
+            <div class="center">
+               <h2>我们的产品介绍</h2>
+            </div>
+            <div id="articleDiv">
+	            <!-- 文章内容s -->
+	            <div class="about">
+					<div class="about-top">
+						<h1>关于我们</h1>
+						<div class="about-in-top">
+							<div class="col-md-12 top-about">
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+									 quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+									 , quis nostrum exercitationem ullam corporis suscipit laboriosam.
+									 But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system,
+								</p>
+							</div>
+							<%-- <div class="col-md-4 about-in">
+								<img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item8.png" alt=" ">
+							</div> --%>
+						<div class="clearfix"> </div>
+						</div>
+					</div>
+				 </div><!-- 文章内容e -->
+				  <!-- 文章内容s -->
+	            <div class="about">
+					<div class="about-top">
+						<h1>关于我们</h1>
+						<div class="about-in-top">
+							<div class="col-md-4 about-in">
+								<img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item8.png" alt=" ">
+							</div>
+							<div class="col-md-8 top-about">
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+									 quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+									 , quis nostrum exercitationem ullam corporis suscipit laboriosam.
+									 But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system,
+								</p>
+							</div>
+							
+						<div class="clearfix"> </div>
+						</div>
+					</div>
+				 </div><!-- 文章内容e -->
+			 </div>
+       </div>
+    </section>
 
     <footer id="footer" class="midnight-blue">
         <div class="container">
@@ -413,6 +424,7 @@
     <script src="<%=request.getContextPath() %>/js/jquery.isotope.min.js"></script>
     <script src="<%=request.getContextPath() %>/js/main.js"></script>
     <script src="<%=request.getContextPath() %>/js/wow.min.js"></script>
+    <script src="<%=request.getContextPath() %>/js/chanpin.js"></script>
     
     <script type="text/javascript">
     /*
