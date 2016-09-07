@@ -28,6 +28,7 @@ import com.byl.manager.common.utils.Constants;
 import com.byl.manager.common.utils.DateUtil;
 import com.byl.manager.common.utils.QueryResult;
 import com.byl.manager.proxy.dto.AgentListDto;
+import com.byl.manager.proxy.dto.ArticleDTO;
 import com.byl.manager.proxy.entity.ApplyProxy;
 import com.byl.manager.proxy.entity.Article;
 import com.byl.manager.proxy.entity.Station;
@@ -105,6 +106,16 @@ public class ProxyController
 		String indexPage = "contact-us";
 		
 		
+		return indexPage;
+	}
+	
+	@RequestMapping(value = "/detailArticle", method = RequestMethod.GET)
+	public String detailArticle(@RequestParam(value="aId",required=false) String aId,
+			ModelMap model,HttpSession httpSession)
+	{
+		String indexPage = "detailArticle";
+		
+		model.addAttribute("aId", aId);
 		return indexPage;
 	}
 	
@@ -323,6 +334,27 @@ public class ProxyController
 		
 		
 		return articles;
+	}
+	
+	/**
+	 * 获取文章详情
+	 * @param id
+	 * @param model
+	 * @param httpSession
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping(value = "/getDetailArticle", method = RequestMethod.GET)
+	public @ResponseBody ArticleDTO getDetailArticle(@RequestParam(value="id",required=false) String id,
+			ModelMap model,HttpSession httpSession) throws Exception
+	{
+		
+		Article article = articleService.getArticleById(id);
+		
+		ArticleDTO articleDTO  = articleService.toDTO(article);
+		
+		
+		return articleDTO;
 	}
 	
 	/**

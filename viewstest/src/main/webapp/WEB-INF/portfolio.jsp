@@ -61,6 +61,18 @@
 		.clearfix{
 			margin-bottom: 40px;
 		}
+		
+		#articleDiv p{
+		font-family: 微软雅黑;
+		}
+		
+		.moreA{
+			color:red;
+		}
+		a:hover{
+			color:blue;
+		}
+		
     </style>
     
     <!--[if IE]>

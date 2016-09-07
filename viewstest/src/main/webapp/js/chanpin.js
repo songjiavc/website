@@ -31,6 +31,13 @@ function initArticleList()
         					title = returndata[i].title;
         					content = returndata[i].content;
         					img = returndata[i].img;
+        					id = returndata[i].id;
+        					
+        					if(content.length>500)//当文章字数大于500字时，则只截取500字显示
+							{
+								content = content.substring(0,500);
+							}
+        					content +='<a class="moreA" href="'+contextPath+'/proxy/detailArticle.action?aId='+id+'">查看更多...</a>';
         					
         					imgList = getImgList(img);
         					if(imgList.length>0&&null != imgList[0].id)
@@ -43,9 +50,9 @@ function initArticleList()
 		    						//图片
 		    						'<div class="col-md-4 about-in">'+
 		    						//服务器图片路径
-		    						'<img class="img-responsive" src="http://www.dzzst.cn:1819/webappmgr/uploadArticleImg/'+imgurl+'" alt=" ">'+
+//		    						'<img class="img-responsive" src="http://www.dzzst.cn:1819/webappmgr/uploadArticleImg/'+imgurl+'" alt=" ">'+
 		    						//本地图片路径
-//									'<img class="img-responsive" src="http://localhost:8081/webappmgr/uploadArticleImg/'+imgurl+'" alt=" ">'+
+									'<img class="img-responsive" src="http://localhost:8081/webappmgr/uploadArticleImg/'+imgurl+'" alt=" ">'+
 									'</div>'+
 									//文字内容
 		    						'	<div class="col-md-8 top-about">'+
