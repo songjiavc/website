@@ -50,9 +50,9 @@ function initArticleList()
 		    						//图片
 		    						'<div class="col-md-4 about-in">'+
 		    						//服务器图片路径
-//		    						'<img class="img-responsive" src="http://www.dzzst.cn:1819/webappmgr/uploadArticleImg/'+imgurl+'" alt=" ">'+
+		    						'<img class="img-responsive" src="http://www.dzzst.cn:1819/webappmgr/uploadArticleImg/'+imgurl+'" alt=" ">'+
 		    						//本地图片路径
-									'<img class="img-responsive" src="http://localhost:8081/webappmgr/uploadArticleImg/'+imgurl+'" alt=" ">'+
+//									'<img class="img-responsive" src="http://localhost:8081/webappmgr/uploadArticleImg/'+imgurl+'" alt=" ">'+
 									'</div>'+
 									//文字内容
 		    						'	<div class="col-md-8 top-about">'+
