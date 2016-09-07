@@ -74,8 +74,14 @@
 		
 		#titleDiv h2{
 		font-family: 隶书;
-		color: darkorange;
+		color: orange;
 		font-size: 45px;
+		text-shadow: 0 1px 1px rgba(0,0,0,1);
+		}
+		
+		#otherImg{
+			margin-top:15px;
+			margin-bottom:15px;
 		}
 		
     </style>
@@ -133,7 +139,7 @@
         </div> --><!--/.top-bar-->
 
         <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
+            <div class="container" >
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -158,7 +164,7 @@
         
     </header><!--/header-->
     <section id="portfolio" style="background: url(<%=request.getContextPath() %>/images/services/bg_services.png) ">
-        <div class="container" >
+        <div class="container" style="    box-shadow: 3px 5px 10px gray;border-radius: 5px;">
             <div class="center" id="titleDiv" >
               
             </div>
