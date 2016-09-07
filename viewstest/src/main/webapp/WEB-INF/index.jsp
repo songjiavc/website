@@ -96,13 +96,13 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
                         <!-- 本地测试的导航 -->
-                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                       <%--  <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li> 
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>  --%>
                         <!-- 部署到服务器的导航 -->
-                        <%-- <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>   --%>                       
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>                         
                     </ul>
                 </div>
             </div><!--/.container-->

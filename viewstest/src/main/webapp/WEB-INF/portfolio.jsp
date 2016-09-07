@@ -128,7 +128,7 @@
                     <ul class="nav navbar-nav">
                     	<li ><a href="http://www.cai810.com">首页</a></li>
                         <li ><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
-                        <li class="active"><a href="<%=request.getContextPath() %>/proxy/chanpin.action"" >产品</a></li>
+                        <li class="active"><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
                         <li ><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>   
                                          
                     </ul>
@@ -360,10 +360,7 @@
 						<h1>关于我们</h1>
 						<div class="about-in-top">
 							<div class="col-md-12 top-about">
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
-									 quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
-									 , quis nostrum exercitationem ullam corporis suscipit laboriosam.
-									 But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system,
+								<p>
 								</p>
 							</div>
 							<%-- <div class="col-md-4 about-in">
@@ -382,10 +379,7 @@
 								<img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item8.png" alt=" ">
 							</div>
 							<div class="col-md-8 top-about">
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
-									 quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
-									 , quis nostrum exercitationem ullam corporis suscipit laboriosam.
-									 But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system,
+								<p>
 								</p>
 							</div>
 							
@@ -406,9 +400,9 @@
                 <div class="col-sm-3 col-xs-12">
                     <ul class="pull-right">
                        <li><a href="http://www.cai810.com">首页</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>   
+                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>   
                     </ul>
                 </div>
                 <div class="col-sm-3 col-xs-12">

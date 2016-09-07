@@ -320,9 +320,9 @@
                 <div class="col-sm-3 col-xs-12">
                     <ul class="pull-right">
                        <li><a href="http://www.cai810.com">首页</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>   
+                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>   
                     </ul>
                 </div>
                 <div class="col-sm-3 col-xs-12">
