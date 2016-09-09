@@ -45,7 +45,7 @@ function initArticleList()
         							var imgurl = imgList[0].uploadRealName;
         							html+='<div class="about"> '+
         							'<div class="about-top">'+
-		    						'<h1>'+title+'</h1>'+
+		    						'<h2>'+title+'</h2>'+
 		    						'<div class="about-in-top">'+
 		    						//图片
 		    						'<div class="col-md-4 about-in">'+
