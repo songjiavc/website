@@ -7,8 +7,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
 <meta name="baidu-site-verification" content="ZnOIKDkQvp" />
-<meta name="keywords" content="电子走势图,baiyilin,佰艺霖,智能看板,佰艺霖官网">
-<meta name="description" content="我们不卖电子走势图，只提供能够提高彩票销量的智能看板,客户的优质评价是对我们产品的最大肯定,我们的产品分为多个彩种，例如快三，11选5等等" />
+<meta name="keywords" content="电子走势图,智能看板,11选5电子走势图,11选5智能看板,baiyilin,佰艺霖,佰艺霖官网">
+<meta name="description" content="电子走势图,智能看板,11选5电子走势图,11选5智能看板,baiyilin,佰艺霖,佰艺霖官网" />
 <title>辽宁佰艺霖科技有限公司</title>
 <!--首页-->
 <!-- core CSS -->
@@ -96,13 +96,13 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
                         <!-- 本地测试的导航 -->
-                       <%--  <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li> --%> 
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li> 
                         <!-- 部署到服务器的导航 -->
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <%-- <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>                         
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li> --%>                         
                     </ul>
                 </div>
             </div><!--/.container-->

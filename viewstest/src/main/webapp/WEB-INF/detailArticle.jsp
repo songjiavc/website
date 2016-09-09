@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="baidu-site-verification" content="ZnOIKDkQvp" />
-<meta name="keywords" content="电子走势图,baiyilin,佰艺霖,智能看板,佰艺霖官网">
-<meta name="description" content="我们不卖电子走势图，只提供能够提高彩票销量的智能看板,客户的优质评价是对我们产品的最大肯定,我们的产品分为多个彩种，例如快三，11选5等等" />
+<meta name="keywords" content="电子走势图,智能看板,11选5电子走势图,11选5智能看板,baiyilin,佰艺霖,佰艺霖官网">
+<meta name="description" content="电子走势图,智能看板,11选5电子走势图,11选5智能看板,baiyilin,佰艺霖,佰艺霖官网" />
 <title>辽宁佰艺霖科技有限公司</title>
 <!-- 产品页面 -->
 <link href="<%=request.getContextPath() %>/css/bootstrap.min.css" rel="stylesheet">
@@ -164,7 +164,7 @@
         
     </header><!--/header-->
     <section id="portfolio" style="background: url(<%=request.getContextPath() %>/images/services/bg_services.png) ">
-        <div class="container" style="    box-shadow: 3px 5px 10px gray;border-radius: 5px;">
+        <div class="container" style="    box-shadow: 10px 10px 20px gray;border-radius: 5px;">
             <div class="center" id="titleDiv" >
               
             </div>
