@@ -39,7 +39,7 @@ function initArticleDetail()
         						//本地图片路径
 //        						otherImg+=' <div class="col-sm-6 col-xs-12"><img class="img-responsive" src="http://localhost:8081/webappmgr/uploadArticleImg/'+imgurl+'" alt=" "></div>';
         						//服务器图片路径
-        						otherImg+=' <div class="col-sm-6 col-xs-12"><img class="img-responsive" src="http://www.dzzst.cn:1819/webappmgr/uploadArticleImg/'+imgurl+'" alt="'+title+'"></div>';
+        						otherImg+=' <div class="col-sm-6 col-xs-12"  style="margin-top: 15px;"><img class="img-responsive" src="http://www.dzzst.cn:1819/webappmgr/uploadArticleImg/'+imgurl+'" alt="'+title+'"></div>';
 //        					}
         			}
         		$("#otherImg").html(otherImg);
