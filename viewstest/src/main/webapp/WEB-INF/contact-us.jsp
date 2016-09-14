@@ -343,5 +343,6 @@
      <!-- 表单校验 -->
 	 <script src="<%=request.getContextPath() %>/js/form.js" type="text/javascript"></script>
 	<script src="<%=request.getContextPath() %>/js/jQuery.validate/jquery.validate.js" type="text/javascript"></script><!-- 使用validate校验js，可以指定校验方式和校验提示 -->
+<script src="//wp.qiye.qq.com/qidian/2852065058/2c6693033018c081cc24d0a604ad7ff6" charset="utf-8"></script>
 </body>
 </html>

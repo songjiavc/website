@@ -214,6 +214,6 @@
     <script src="<%=request.getContextPath() %>/js/wow.min.js"></script>
     <script src="<%=request.getContextPath() %>/js/detailArticle.js"></script>
     
-    
+<script src="//wp.qiye.qq.com/qidian/2852065058/2c6693033018c081cc24d0a604ad7ff6" charset="utf-8"></script>    
 </body>
 </html>
