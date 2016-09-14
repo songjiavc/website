@@ -89,20 +89,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="http://www.cai810.com/"><img src="<%=request.getContextPath() %>/images/clogo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="http://www.cai810.com/"><img src="<%=request.getContextPath() %>/images/clogo.png" alt="佰艺霖官网"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
                         <!-- 本地测试的导航 -->
-                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                       <%--  <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li> 
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>  --%>
                         <!-- 部署到服务器的导航 -->
-                        <%-- <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li> --%>                         
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>                         
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -382,9 +382,9 @@
 
             <div class="partners">
                 <ul>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="<%=request.getContextPath() %>/images/baiyilin.jpg"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="<%=request.getContextPath() %>/images/ticai.jpg"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="<%=request.getContextPath() %>/images/fucai.jpg"></a></li>
+                    <li> <a href="#"><img alt="佰艺霖官网" class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="<%=request.getContextPath() %>/images/baiyilin.jpg"></a></li>
+                    <li> <a href="#"><img alt="体彩" class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="<%=request.getContextPath() %>/images/ticai.jpg"></a></li>
+                    <li> <a href="#"><img alt="福彩" class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="<%=request.getContextPath() %>/images/fucai.jpg"></a></li>
                 </ul>
             </div>        
         </div><!--/.container-->

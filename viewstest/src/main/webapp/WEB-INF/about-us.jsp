@@ -95,7 +95,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="http://www.cai810.com"><img src="<%=request.getContextPath() %>/images/clogo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="http://www.cai810.com"><img src="<%=request.getContextPath() %>/images/clogo.png" alt="佰艺霖官网"></a>
                 </div>
 				
                  <div class="collapse navbar-collapse navbar-right">
@@ -129,10 +129,10 @@
 					 <!-- 轮播（Carousel）项目 -->
 					<div class="carousel-inner">
 						<div class="item active" >
-							<img src="<%=request.getContextPath() %>/images/anli1.jpg" class="img-responsive" alt=""> 
+							<img src="<%=request.getContextPath() %>/images/anli1.jpg" class="img-responsive" alt="智能面板成功案例"> 
 						</div><!--/.item-->
 					   <div class="item">
-							<img src="<%=request.getContextPath() %>/images/u19.jpg" class="img-responsive" alt=""> 
+							<img src="<%=request.getContextPath() %>/images/u19.jpg" class="img-responsive" alt="智能面板成功案例"> 
 					   </div> 
 					</div>
 					 <!-- 轮播（Carousel）导航 -->

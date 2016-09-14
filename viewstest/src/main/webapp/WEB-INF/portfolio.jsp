@@ -134,7 +134,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="http://www.cai810.com"><img src="<%=request.getContextPath() %>/images/clogo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="http://www.cai810.com"><img src="<%=request.getContextPath() %>/images/clogo.png" alt="佰艺霖官网"></a>
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-right">
@@ -172,7 +172,7 @@
                 	<!-- 快三图s -->
                    <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap"><%--这个class可以修改缩略图的布局距离 --%>
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin1.jpg" alt="" >
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin1.jpg" alt="点击查看快三智能面板" >
                             <div class="overlay" >
                                 <div class="recent-work-inner" >
                                     <h3><a href="#">快三</a></h3>
@@ -188,7 +188,7 @@
                     </div><!--/.portfolio-item-->
  					<div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin2.jpg" alt="">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin2.jpg" alt="点击查看快三智能面板">
                             <div class="overlay">
                                 <div class="recent-work-inner">
                                     <h3><a href="#">快三</a></h3>
@@ -200,7 +200,7 @@
                     </div><!--/.portfolio-item-->
                     <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin3.jpg" alt="">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin3.jpg" alt="点击查看快三智能面板">
                             <div class="overlay">
                                 <div class="recent-work-inner">
                                     <h3><a href="#">快三</a></h3>
@@ -213,7 +213,7 @@
                     
                     <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin4.jpg" alt="">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin4.jpg" alt="点击查看快三智能面板">
                             <div class="overlay">
                                 <div class="recent-work-inner">
                                     <h3><a href="#">快三</a></h3>
@@ -225,7 +225,7 @@
                     </div><!--/.portfolio-item-->
                     <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin5.jpg" alt="">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin5.jpg" alt="点击查看快三智能面板">
                             <div class="overlay">
                                 <div class="recent-work-inner">
                                     <h3><a href="#">快三</a></h3>
@@ -237,7 +237,7 @@
                     </div><!--/.portfolio-item-->
                     <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin6.jpg" alt="">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin6.jpg" alt="点击查看快三智能面板">
                             <div class="overlay">
                                 <div class="recent-work-inner" >
                                     <h3><a href="#">快三</a></h3>
@@ -249,7 +249,7 @@
                     </div><!--/.portfolio-item-->
                     <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin7.jpg" alt="">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin7.jpg" alt="点击查看快三智能面板">
                             <div class="overlay">
                                 <div class="recent-work-inner">
                                     <h3><a href="#">快三</a></h3>
@@ -261,7 +261,7 @@
                     </div><!--/.portfolio-item-->
                     <div class="portfolio-item kuaisan col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin8.jpg" alt="">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/chanpin8.jpg" alt="点击查看快三智能面板">
                             <div class="overlay">
                                 <div class="recent-work-inner">
                                     <h3><a href="#">快三</a></h3>
@@ -346,7 +346,7 @@
 
                     <div class="portfolio-item   11in5 col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item8.png" alt="">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item8.png" alt="点击查看11选5智能面板">
                             <div class="overlay">
                                 <div class="recent-work-inner">
                                     <h3><a href="#">Business theme</a></h3>
