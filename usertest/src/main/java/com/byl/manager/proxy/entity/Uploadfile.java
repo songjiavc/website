@@ -8,9 +8,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.byl.manager.common.entity.BaseEntiry;
+
 @Entity
 @Table(name = "UPLOADFILE")
-public class Uploadfile {
+public class Uploadfile extends BaseEntiry {
 
 	private Integer id;
 	private String newsUuid;
