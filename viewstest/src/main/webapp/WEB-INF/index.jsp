@@ -96,7 +96,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
                         <!-- 本地测试的导航 -->
-                       <%--  <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                      <%--   <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>  --%>
                         <!-- 部署到服务器的导航 -->
@@ -396,7 +396,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
-                    Copyright &copy; 2016.Company name All rights reserved.友情链接：<a target="_blank" href="http://www.cwl.gov.cn/"  target="_blank">中国福彩网</a>  <a  target="_blank" href="http://www.lottery.gov.cn/"  target="_blank">中国体彩网</a>
+                    ©2016 辽宁佰艺霖科技有限公司 版权所有  备案：辽ICP备16011717号-1 .友情链接：<a target="_blank" href="http://www.cwl.gov.cn/"  target="_blank">中国福彩网</a>  <a  target="_blank" href="http://www.lottery.gov.cn/"  target="_blank">中国体彩网</a>
                 </div>
                 <div class="col-sm-4">
                     <ul class="pull-right">
@@ -406,6 +406,9 @@
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>   
                     </ul>
                 </div>
+                 <div class="col-sm-3 col-xs-12">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i><a href="tel:400-169-1810" title="点击拨打公司电话">400-169-1810</a></p></div>
+                 </div>
             </div>
         </div>
     </footer><!--/#footer-->

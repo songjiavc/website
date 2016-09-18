@@ -405,10 +405,10 @@
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                    	友情链接：<a target="_blank" href="http://www.cwl.gov.cn/"  target="_blank">中国福彩网</a>  <a  target="_blank" href="http://www.lottery.gov.cn/"  target="_blank">中国体彩网</a>
+                <div class="col-sm-8">
+                    	©2016 辽宁佰艺霖科技有限公司 版权所有  备案：辽ICP备16011717号-1.友情链接：<a target="_blank" href="http://www.cwl.gov.cn/"  target="_blank">中国福彩网</a>  <a  target="_blank" href="http://www.lottery.gov.cn/"  target="_blank">中国体彩网</a>
                 </div>
-                <div class="col-sm-3 col-xs-12">
+                <div class="col-sm-4">
                     <ul class="pull-right">
                        <li><a href="http://www.cai810.com">首页</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
