@@ -346,12 +346,60 @@
 
                     <div class="portfolio-item   11in5 col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/portfolio/recent/item8.png" alt="点击查看11选5智能面板">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/5in111.jpg" alt="点击查看11选5智能面板">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="<%=request.getContextPath() %>/images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i>  查看</a>
+                                    <h3><a href="#">11选5</a></h3>
+                                    <p>匠心打造，清新护眼</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/5in111.jpg" rel="prettyPhoto[5in11]"><i class="fa fa-eye"></i>  查看</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+                    <div class="portfolio-item   11in5 col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/5in112.jpg" alt="点击查看11选5智能面板">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">11选5</a></h3>
+                                    <p>百变主图，随心而变</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/5in112.jpg" rel="prettyPhoto[5in11]"><i class="fa fa-eye"></i>  查看</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+                    <div class="portfolio-item   11in5 col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/5in113.jpg" alt="点击查看11选5智能面板">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">11选5</a></h3>
+                                    <p>遗漏数据，实时统计</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/5in113.jpg" rel="prettyPhoto[5in11]"><i class="fa fa-eye"></i>  查看</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+                    <div class="portfolio-item   11in5 col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/5in114.jpg" alt="点击查看11选5智能面板">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">11选5</a></h3>
+                                    <p>彩站利器，精彩更多</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/5in114.jpg" rel="prettyPhoto[5in11]"><i class="fa fa-eye"></i>  查看</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+                    <div class="portfolio-item   11in5 col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<%=request.getContextPath() %>/images/5in115.jpg" alt="点击查看11选5智能面板">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">11选5</a></h3>
+                                    <p>自主遗漏，查所想看</p>
+                                    <a class="preview" href="<%=request.getContextPath() %>/images/5in115.jpg" rel="prettyPhoto[5in11]"><i class="fa fa-eye"></i>  查看</a>
                                 </div> 
                             </div>
                         </div>          
