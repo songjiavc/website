@@ -44,6 +44,16 @@
 	
 	
 </script>
+
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?19052d388125100d473c3eb8471dec48";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
    
    <style type="text/css">
    #zDiv{

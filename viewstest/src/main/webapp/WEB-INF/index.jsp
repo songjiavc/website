@@ -47,6 +47,17 @@
 	}
 	</style>
 	<![endif]-->
+	
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?19052d388125100d473c3eb8471dec48";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	
     
 </head><!--/head-->
 
@@ -96,13 +107,13 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%=request.getContextPath() %>">首页</a></li>
                         <!-- 本地测试的导航 -->
-                        <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
+                       <%--  <li><a href="<%=request.getContextPath() %>/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li> 
+                        <li><a href="<%=request.getContextPath() %>/proxy/jiameng.action">加盟我们</a></li>  --%>
                         <!-- 部署到服务器的导航 -->
-                        <%-- <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/anli.action" >案例</a></li>
                         <li><a href="<%=request.getContextPath() %>/viewstest/proxy/chanpin.action" >产品</a></li>
-                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>     --%>                     
+                        <li><a href="<%=request.getContextPath() %>/viewstest/proxy/jiameng.action">加盟我们</a></li>                         
                     </ul>
                 </div>
             </div><!--/.container-->
