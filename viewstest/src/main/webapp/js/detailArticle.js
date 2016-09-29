@@ -47,7 +47,6 @@ function initArticleDetail()
         	
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
-            window.parent.location.href = contextPath + "/error.jsp";
         }
    });
 }
@@ -70,7 +69,6 @@ function getImgList(img)
         	
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
-            window.parent.location.href = contextPath + "/error.jsp";
         }
    });
 	
