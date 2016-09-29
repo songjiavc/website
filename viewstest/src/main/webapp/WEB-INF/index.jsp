@@ -48,16 +48,16 @@
 	</style>
 	<![endif]-->
 	
-	<script>
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?19052d388125100d473c3eb8471dec48";
-  var s = document.getElementsByTagName("script")[0];
+  hm.src = "//hm.baidu.com/hm.js?fc6b9212508ec535f633ea126f7daf76";
+  var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-	
+
     
 </head><!--/head-->
 
